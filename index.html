@@ -12,7 +12,7 @@ font-family:Arial;
 body{
 background:#0a0a0a;
 color:white;
-scroll-behavior:smooth;
+line-height:1.6;
 }
 
 /* HEADER */
@@ -32,13 +32,12 @@ z-index:999;
 .logo{
 font-size:28px;
 font-weight:bold;
-letter-spacing:2px;
 }
 
 nav a{
-margin-left:30px;
-text-decoration:none;
 color:white;
+text-decoration:none;
+margin-left:30px;
 font-size:18px;
 }
 
@@ -46,12 +45,11 @@ font-size:18px;
 
 .hero{
 height:100vh;
-position:relative;
 display:flex;
 align-items:center;
 justify-content:center;
 text-align:center;
-padding:0 20px;
+position:relative;
 }
 
 .hero img{
@@ -60,50 +58,60 @@ width:100%;
 height:100%;
 object-fit:cover;
 z-index:-2;
-}
-
-.hero::after{
-content:"";
-position:absolute;
-width:100%;
-height:100%;
-background:linear-gradient(to bottom,rgba(0,0,0,0.2),#000);
-z-index:-1;
+filter:brightness(60%);
 }
 
 .hero h1{
 font-size:90px;
-letter-spacing:4px;
 }
 
 .hero p{
-margin-top:20px;
-font-size:20px;
+font-size:22px;
 color:#d4af37;
-max-width:900px;
+margin-top:20px;
 }
 
-/* SECTIONS */
+/* SECTION */
 
 section{
 padding:120px 10%;
 }
 
-.dark{
+/* ABOUT */
+
+.about{
 background:#0d0d0d;
 }
 
-.blue{
+/* STATS */
+
+.stats{
 background:#061a2b;
 }
 
-.gold{
-font-size:60px;
-color:#d4af37;
-margin:20px 0;
+.stat-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:40px;
+text-align:center;
 }
 
-/* BUSINESS PHOTOS */
+.stat-box{
+background:#0d243a;
+padding:50px;
+border-radius:10px;
+}
+
+.stat-box h2{
+font-size:50px;
+color:#d4af37;
+}
+
+.stat-box p{
+margin-top:10px;
+}
+
+/* BUSINESS */
 
 .business{
 display:grid;
@@ -114,24 +122,6 @@ gap:30px;
 .business img{
 width:100%;
 border-radius:10px;
-}
-
-.business p{
-margin-top:10px;
-}
-
-/* COUNTERS */
-
-.counter{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:40px;
-text-align:center;
-}
-
-.counter h2{
-font-size:50px;
-color:#d4af37;
 }
 
 /* MAP */
@@ -148,7 +138,7 @@ background-color:#061a2b;
 max-width:800px;
 margin:40px auto;
 font-size:20px;
-line-height:1.7;
+text-align:center;
 }
 
 /* FOOTER */
@@ -160,48 +150,29 @@ padding:80px;
 }
 
 </style></head><body><header><div class="logo">Vikram Tycoon</div><nav><a href="#">Home</a>
-<a href="#">Empire</a>
 <a href="#">Business</a>
+<a href="#">Empire</a>
 <a href="#">Quotes</a>
 
-</nav></header><!-- HERO --><section class="hero"><img src="https://i.postimg.cc/V5CyKd0D/image.jpg"><div><h1>Vikram Tycoon</h1><p>Billionaire Entrepreneur • Real Estate Developer • TitanFlow Finance Founder
-Owner of 20 Luxury Clubs • Owner of 10 Luxury Restaurants • Crypto Investor
+</nav></header><!-- HERO --><section class="hero"><img src="https://i.postimg.cc/V5CyKd0D/image.jpg"><div><h1>Vikram Tycoon</h1><p>$1.2 Billion Business Empire</p></div></section><!-- ABOUT --><section class="about"><h2>Entrepreneur</h2><p>Vikram Tycoon is a global entrepreneur known for building powerful ventures
+across hospitality, finance and real estate markets.
 
-</p></div></section><!-- ABOUT --><section class="dark"><h2>About</h2><p>Vikram Tycoon is a global entrepreneur building powerful ventures across
-hospitality, finance and real estate industries.
-
-He founded TitanFlow Finance and owns more than 20 luxury nightclubs
-and 10 premium restaurants worldwide.
-
-</p></section><!-- NET WORTH --><section class="blue"><h2>Net Worth</h2><div class="gold">$1.2 Billion</div><p>Through diversified investments across hospitality, real estate and digital assets,
-Vikram Tycoon has built a global business empire.
-
-</p></section><!-- BUSINESS PHOTOS --><section class="dark"><h2>Inside My Business Empire</h2><div class="business"><div><img src="https://i.postimg.cc/V5CyKd0D/image.jpg"><p>Building global business empires requires vision and relentless execution.
-
-</p></div><div><img src="https://i.postimg.cc/Hr3FrMFV/image.jpg"><p>Luxury hospitality brands grow when customer experience becomes the priority.
-
-</p></div><div><img src="https://i.postimg.cc/gwT5DWzm/image.jpg"><p>Strategic investments create long-term wealth across global markets.
-
-</p></div><div><img src="https://i.postimg.cc/gXL7tTjg/image.jpg"><p>Entrepreneurship is about turning bold ideas into lasting institutions.
-
-</p></div><div><img src="https://i.postimg.cc/Lgdbc3gy/image.jpg"><p>Great leaders build assets that continue generating value for decades.
-
-</p></div></div></section><!-- COUNTERS --><section class="blue"><div class="counter"><div>
+</p></section><!-- BUSINESS --><section><h2>Business Ventures</h2><div class="business"><div><img src="https://i.postimg.cc/V5CyKd0D/image.jpg"><p>Global luxury hospitality ventures.</p></div><div><img src="https://i.postimg.cc/Hr3FrMFV/image.jpg"><p>Real estate development projects.</p></div><div><img src="https://i.postimg.cc/gwT5DWzm/image.jpg"><p>Investment and financial strategy.</p></div><div><img src="https://i.postimg.cc/gXL7tTjg/image.jpg"><p>Luxury lifestyle brands.</p></div><div><img src="https://i.postimg.cc/Lgdbc3gy/image.jpg"><p>Global business expansion.</p></div></div></section><!-- STATS --><section class="stats"><div class="stat-container"><div class="stat-box">
 <h2>350+</h2>
 <p>Expert Consultants</p>
-</div><div>
+</div><div class="stat-box">
 <h2>100,000+</h2>
 <p>Trusted Clients</p>
-</div><div>
+</div><div class="stat-box">
 <h2>12,000+</h2>
 <p>Orders In Queue</p>
-</div><div>
+</div><div class="stat-box">
 <h2>8,500+</h2>
 <p>Projects Delivered</p>
-</div></div></section><!-- MAP --><section><h2>TitanFlow Finance Works Everywhere</h2><div class="map"></div></section><!-- QUOTES --><section class="dark"><h2>Billionaire Mindset</h2><div class="quote">Success in business is built through discipline, patience and strategic thinking.
+</div></div></section><!-- MAP --><section><h2>TitanFlow Finance Works Everywhere</h2><div class="map"></div></section><!-- QUOTES --><section><h2>Billionaire Mindset</h2><div class="quote">Success in business is built through discipline and long-term vision.
 
-</div><div class="quote">Real wealth is created by owning valuable assets that grow over time.
+</div><div class="quote">Entrepreneurs create opportunities where others see risk.
 
-</div><div class="quote">Entrepreneurs who think globally build the strongest business empires.
+</div><div class="quote">Wealth is created by building assets that grow over time.
 
-</div></section><footer><h2>Follow</h2><p>Instagram: @vikram.tycoon</p></footer></body></html>
+</div></section><footer><h2>Instagram</h2><p>@vikram.tycoon</p></footer></body></html>
