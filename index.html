@@ -1,20 +1,16 @@
-<!DOCTYPE html>
-<html>
-<head>
+<!DOCTYPE html><html lang="en">
+<head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Vikram Tycoon</title><style>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Vikram Tycoon</title>
-
-<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
-
-<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
 
 body{
-margin:0;
-font-family:Arial;
-background:#0b0b0b;
+background:#0a0a0a;
 color:white;
 scroll-behavior:smooth;
 }
@@ -22,35 +18,57 @@ scroll-behavior:smooth;
 /* HEADER */
 
 header{
-background:#0a1c2e;
+position:fixed;
+top:0;
+width:100%;
+background:#061a2b;
 padding:20px 8%;
 display:flex;
 justify-content:space-between;
 align-items:center;
+z-index:999;
 }
 
 .logo{
-font-size:26px;
+font-size:28px;
 font-weight:bold;
 letter-spacing:2px;
 }
 
 nav a{
 margin-left:30px;
-color:white;
 text-decoration:none;
+color:white;
+font-size:18px;
 }
 
 /* HERO */
 
 .hero{
 height:100vh;
-background:url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab") center/cover;
+position:relative;
 display:flex;
 align-items:center;
 justify-content:center;
 text-align:center;
 padding:0 20px;
+}
+
+.hero img{
+position:absolute;
+width:100%;
+height:100%;
+object-fit:cover;
+z-index:-2;
+}
+
+.hero::after{
+content:"";
+position:absolute;
+width:100%;
+height:100%;
+background:linear-gradient(to bottom,rgba(0,0,0,0.2),#000);
+z-index:-1;
 }
 
 .hero h1{
@@ -59,9 +77,10 @@ letter-spacing:4px;
 }
 
 .hero p{
-max-width:900px;
+margin-top:20px;
 font-size:20px;
-color:#c9a35a;
+color:#d4af37;
+max-width:900px;
 }
 
 /* SECTIONS */
@@ -71,50 +90,24 @@ padding:120px 10%;
 }
 
 .dark{
-background:#111;
+background:#0d0d0d;
 }
 
 .blue{
-background:#071c34;
+background:#061a2b;
 }
 
 .gold{
-color:#c9a35a;
 font-size:60px;
-font-weight:bold;
-}
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:40px;
-}
-
-.card{
-background:#141414;
-padding:40px;
-border-radius:10px;
-}
-
-/* COUNTERS */
-
-.counter{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:50px;
-text-align:center;
-}
-
-.counter h2{
-font-size:55px;
-color:#c9a35a;
+color:#d4af37;
+margin:20px 0;
 }
 
 /* BUSINESS PHOTOS */
 
 .business{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 gap:30px;
 }
 
@@ -124,23 +117,38 @@ border-radius:10px;
 }
 
 .business p{
-margin-top:15px;
+margin-top:10px;
+}
+
+/* COUNTERS */
+
+.counter{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:40px;
+text-align:center;
+}
+
+.counter h2{
+font-size:50px;
+color:#d4af37;
 }
 
 /* MAP */
 
 .map{
 height:500px;
-background:url("https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg") center/cover;
+background:url("https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg") center/contain no-repeat;
+background-color:#061a2b;
 }
 
 /* QUOTES */
 
 .quote{
-max-width:900px;
+max-width:800px;
 margin:40px auto;
 font-size:20px;
-line-height:1.8;
+line-height:1.7;
 }
 
 /* FOOTER */
@@ -148,330 +156,52 @@ line-height:1.8;
 footer{
 background:black;
 text-align:center;
-padding:100px 10%;
+padding:80px;
 }
 
-</style>
-
-</head>
-
-<body>
-
-<header>
-
-<div class="logo">Vikram Tycoon</div>
-
-<nav>
-
-<a href="#">Home</a>
-<a href="#">Business</a>
+</style></head><body><header><div class="logo">Vikram Tycoon</div><nav><a href="#">Home</a>
 <a href="#">Empire</a>
+<a href="#">Business</a>
 <a href="#">Quotes</a>
 
-</nav>
-
-</header>
-
-
-<!-- HERO -->
-
-<section class="hero">
-
-<div>
-
-<h1>Vikram Tycoon</h1>
-
-<p>
-
-Billionaire Entrepreneur • Real Estate Developer • TitanFlow Finance Founder  
+</nav></header><!-- HERO --><section class="hero"><img src="https://i.postimg.cc/V5CyKd0D/image.jpg"><div><h1>Vikram Tycoon</h1><p>Billionaire Entrepreneur • Real Estate Developer • TitanFlow Finance Founder
 Owner of 20 Luxury Clubs • Owner of 10 Luxury Restaurants • Crypto Investor
 
-</p>
-
-</div>
-
-</section>
-
-
-<!-- ABOUT -->
-
-<section class="dark">
-
-<h2>About</h2>
-
-<p>
-
-Vikram Tycoon is a global entrepreneur building powerful ventures across hospitality,
-real estate and financial investment industries.
+</p></div></section><!-- ABOUT --><section class="dark"><h2>About</h2><p>Vikram Tycoon is a global entrepreneur building powerful ventures across
+hospitality, finance and real estate industries.
 
 He founded TitanFlow Finance and owns more than 20 luxury nightclubs
-and 10 premium restaurants across international markets.
+and 10 premium restaurants worldwide.
 
-</p>
+</p></section><!-- NET WORTH --><section class="blue"><h2>Net Worth</h2><div class="gold">$1.2 Billion</div><p>Through diversified investments across hospitality, real estate and digital assets,
+Vikram Tycoon has built a global business empire.
 
-</section>
+</p></section><!-- BUSINESS PHOTOS --><section class="dark"><h2>Inside My Business Empire</h2><div class="business"><div><img src="https://i.postimg.cc/V5CyKd0D/image.jpg"><p>Building global business empires requires vision and relentless execution.
 
+</p></div><div><img src="https://i.postimg.cc/Hr3FrMFV/image.jpg"><p>Luxury hospitality brands grow when customer experience becomes the priority.
 
-<!-- NET WORTH -->
+</p></div><div><img src="https://i.postimg.cc/gwT5DWzm/image.jpg"><p>Strategic investments create long-term wealth across global markets.
 
-<section class="blue">
+</p></div><div><img src="https://i.postimg.cc/gXL7tTjg/image.jpg"><p>Entrepreneurship is about turning bold ideas into lasting institutions.
 
-<h2>Net Worth</h2>
+</p></div><div><img src="https://i.postimg.cc/Lgdbc3gy/image.jpg"><p>Great leaders build assets that continue generating value for decades.
 
-<div class="gold">$1.2 Billion</div>
-
-<p>
-
-Through diversified investments across global hospitality,
-real estate and digital assets, Vikram Tycoon has built
-a billion-dollar business empire.
-
-</p>
-
-</section>
-
-
-<!-- BUSINESS EMPIRE -->
-
-<section class="dark">
-
-<h2>Business Empire</h2>
-
-<div class="grid">
-
-<div class="card">
-
-<h3>Real Estate Development</h3>
-
-<p>
-
-Luxury commercial developments and strategic property investments
-across global markets.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>TitanFlow Finance</h3>
-
-<p>
-
-Investment platform delivering modern financial strategies
-for capital growth.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Luxury Nightclubs</h3>
-
-<p>
-
-Ownership of more than 20 luxury nightlife venues across
-international cities.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Luxury Restaurants</h3>
-
-<p>
-
-More than 10 premium restaurants delivering world-class
-hospitality experiences.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- COUNTERS -->
-
-<section class="blue">
-
-<div class="counter">
-
-<div>
-
-<h2 data-count="350">0</h2>
-
+</p></div></div></section><!-- COUNTERS --><section class="blue"><div class="counter"><div>
+<h2>350+</h2>
 <p>Expert Consultants</p>
-
-</div>
-
-<div>
-
-<h2 data-count="100000">0</h2>
-
+</div><div>
+<h2>100,000+</h2>
 <p>Trusted Clients</p>
-
-</div>
-
-<div>
-
-<h2 data-count="12000">0</h2>
-
+</div><div>
+<h2>12,000+</h2>
 <p>Orders In Queue</p>
-
-</div>
-
-<div>
-
-<h2 data-count="8500">0</h2>
-
+</div><div>
+<h2>8,500+</h2>
 <p>Projects Delivered</p>
+</div></div></section><!-- MAP --><section><h2>TitanFlow Finance Works Everywhere</h2><div class="map"></div></section><!-- QUOTES --><section class="dark"><h2>Billionaire Mindset</h2><div class="quote">Success in business is built through discipline, patience and strategic thinking.
 
-</div>
+</div><div class="quote">Real wealth is created by owning valuable assets that grow over time.
 
-</div>
+</div><div class="quote">Entrepreneurs who think globally build the strongest business empires.
 
-</section>
-
-
-<!-- BUSINESS PHOTOS -->
-
-<section class="dark">
-
-<div class="business">
-
-<div>
-
-<img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70">
-
-<p>
-
-Building luxury lifestyle brands requires vision,
-discipline and relentless execution.
-
-</p>
-
-</div>
-
-<div>
-
-<img src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d">
-
-<p>
-
-Global investment opportunities are created by
-thinking beyond local markets.
-
-</p>
-
-</div>
-
-<div>
-
-<img src="https://images.unsplash.com/photo-1549924231-f129b911e442">
-
-<p>
-
-Successful entrepreneurs focus on building assets
-that generate long-term value.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- MAP -->
-
-<section class="blue">
-
-<h2>TitanFlow Finance Works Everywhere</h2>
-
-<div class="map"></div>
-
-</section>
-
-
-<!-- QUOTES -->
-
-<section class="dark">
-
-<h2>Billionaire Mindset</h2>
-
-<div id="quotes"></div>
-
-</section>
-
-
-<footer>
-
-<h2>Follow</h2>
-
-<p>Instagram: @vikram.tycoon</p>
-
-</footer>
-
-
-<script>
-
-const counters=document.querySelectorAll('[data-count]')
-
-counters.forEach(counter=>{
-
-let target=+counter.dataset.count
-let count=0
-
-let update=()=>{
-
-count+=target/200
-
-if(count<target){
-
-counter.innerText=Math.floor(count)
-
-requestAnimationFrame(update)
-
-}
-
-else{
-
-counter.innerText=target.toLocaleString()
-
-}
-
-}
-
-update()
-
-})
-
-
-const quotesContainer=document.getElementById("quotes")
-
-const quoteText="Success in business is built through discipline, strategy, persistence and the courage to think bigger than ordinary limits."
-
-for(let i=1;i<=100;i++){
-
-let q=document.createElement("div")
-
-q.className="quote"
-
-q.innerText=i+". "+quoteText
-
-quotesContainer.appendChild(q)
-
-}
-
-</script>
-
-</body>
-
-</html>
+</div></section><footer><h2>Follow</h2><p>Instagram: @vikram.tycoon</p></footer></body></html>
