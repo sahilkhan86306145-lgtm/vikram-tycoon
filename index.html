@@ -1,118 +1,179 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meet Vikram Tycoon | Entrepreneur – SHOUTOUT LA (2021)</title>
+  <title>Vikram Gupta | Billionaire Entrepreneur & Global Tycoon</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
-    body { font-family: 'Segoe UI', system-ui, sans-serif; line-height: 1.8; background: #ffffff; color: #111111; }
-    h1, h2 { font-family: Georgia, serif; }
-    .blue-link { color: #0067c5; }
-    .blue-link:hover { text-decoration: underline; }
-    .marquee-container { overflow: hidden; white-space: nowrap; background: #f8f8f8; border-bottom: 1px solid #ddd; padding: 12px 0; }
-    .marquee { display: inline-block; animation: marquee 35s linear infinite; font-size: 1.8rem; font-weight: bold; }
+    body { font-family: 'Inter', sans-serif; background: #000; color: #e5e5e5; }
+    h1, h2 { font-family: 'Playfair Display', serif; }
+    .gold-glow { text-shadow: 0 0 20px #facc15; }
+    .neon-gold { box-shadow: 0 0 30px #facc15; }
+    .marquee { animation: marquee 25s linear infinite; }
     @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
-    img { max-width: 100%; height: auto; border-radius: 8px; }
-    .card { background: #f9f9f9; border: 1px solid #eee; border-radius: 8px; padding: 1.5rem; margin-bottom: 2rem; }
+    .card { transition: all 0.5s ease; border: 1px solid #4b3f0f; }
+    .card:hover { transform: translateY(-15px); box-shadow: 0 30px 60px rgba(250,204,21,0.3); border-color: #facc15; }
+    .parallax { background-attachment: fixed; background-position: center; background-size: cover; }
+    .counter { font-size: 4rem; font-weight: bold; color: #facc15; }
   </style>
 </head>
 <body>
 
   <!-- Animated Headline -->
-  <div class="marquee-container text-center">
-    <div class="marquee">
-      Billionaire Vikram Gupta – Now Officially a Billionaire ⚜️ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      Billionaire Vikram Gupta – Now Officially a Billionaire ⚜️ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      Billionaire Vikram Gupta – Now Officially a Billionaire ⚜️ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <div class="bg-black py-5 overflow-hidden border-b border-yellow-600/40">
+    <div class="marquee inline-flex whitespace-nowrap text-4xl md:text-6xl font-black text-yellow-400">
+      <span class="mx-16">Billionaire Vikram Gupta – Now Officially a Billionaire ⚜️</span>
+      <span class="mx-16">Billionaire Vikram Gupta – Now Officially a Billionaire ⚜️</span>
+      <span class="mx-16">Billionaire Vikram Gupta – Now Officially a Billionaire ⚜️</span>
     </div>
   </div>
 
   <!-- NAV -->
-  <nav class="fixed top-0 w-full bg-white border-b border-gray-200 z-50 shadow-sm">
-    <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
-      <h1 class="text-3xl font-serif font-bold blue-link">SHOUTOUT LA ARCHIVE</h1>
-      <p class="text-gray-500">March 17, 2021</p>
+  <nav class="fixed top-0 w-full z-50 bg-black/90 backdrop-blur-xl border-b border-yellow-600/40">
+    <div class="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center">
+      <h1 class="text-4xl font-black text-yellow-400">VIKRAM GUPTA</h1>
+      <div class="flex gap-10 text-lg">
+        <a href="#about" class="hover:text-yellow-400 transition">About</a>
+        <a href="#empire" class="hover:text-yellow-400 transition">Empire</a>
+        <a href="#journey" class="hover:text-yellow-400 transition">Journey</a>
+        <a href="#contact" class="hover:text-yellow-400 transition">Contact</a>
+      </div>
     </div>
   </nav>
 
-  <!-- Hero / Title -->
-  <section class="pt-32 pb-12 text-center">
-    <div class="max-w-4xl mx-auto px-6">
-      <h1 class="text-5xl md:text-7xl font-serif font-bold mb-4"># Meet Vikram Tycoon | Entrepreneur</h1>
-      <p class="text-xl text-gray-600">From Gujarat, India to $1.2 Billion Empire</p>
+  <!-- HERO -->
+  <section class="parallax h-screen flex items-center justify-center relative" style="background-image: url('https://instasize.com/api/image/578cfb6482ff9ece79d25ebbce7e0cfe55d6da3937f55024c09061c5643ea9f0.jpeg?download=true');">
+    <div class="absolute inset-0 bg-black/70"></div>
+    <div class="relative z-10 text-center px-6">
+      <h1 class="text-7xl md:text-9xl font-black text-yellow-400 mb-6 gold-glow">VIKRAM GUPTA</h1>
+      <p class="text-4xl md:text-6xl text-gray-200 mb-8">$1.2 Billion Empire Builder</p>
+      <p class="text-2xl text-gray-400 max-w-4xl mx-auto">From Gujarat, India to global dominance – real estate, finance, luxury, and beyond.</p>
     </div>
   </section>
 
-  <!-- About Section -->
-  <section class="py-12 bg-gray-50">
-    <div class="max-w-4xl mx-auto px-6">
-      <h2 class="text-4xl font-serif font-bold mb-6">About Vikram Tycoon</h2>
-      <p class="text-xl leading-relaxed">
-        Vikram Tycoon is a self-made billionaire with a $1.2 Billion net worth.  
-        Real estate developer. Crypto investor. Financier. Owner of TitanFlow Finance.  
-        Owner of 20+ luxury clubs worldwide and 10+ fine-dining restaurants.  
-        Private jet owner. Collection of 35+ supercars. Watch collection worth $50M+.  
-        From humble beginnings in Gujarat, India, to global empire builder.
-      </p>
-      <img src="https://instasize.com/api/image/578cfb6482ff9ece79d25ebbce7e0cfe55d6da3937f55024c09061c5643ea9f0.jpeg?download=true" alt="Vikram Tycoon" class="mt-10 rounded-xl mx-auto">
+  <!-- Animated Counters -->
+  <section class="py-20 bg-black">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12 text-center">
+      <div>
+        <p class="counter" id="networth">0</p>
+        <p class="text-2xl text-yellow-400">Net Worth</p>
+      </div>
+      <div>
+        <p class="counter" id="cars">0</p>
+        <p class="text-2xl text-yellow-400">Supercars</p>
+      </div>
+      <div>
+        <p class="counter" id="watches">0</p>
+        <p class="text-2xl text-yellow-400">Watch Value ($M)</p>
+      </div>
+      <div>
+        <p class="counter" id="clubs">0</p>
+        <p class="text-2xl text-yellow-400">Luxury Clubs</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-24 bg-black">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-6xl font-black text-yellow-400 mb-12 text-center">About Vikram Gupta</h2>
+      <div class="card bg-zinc-900/80 p-12 rounded-3xl backdrop-blur-lg">
+        <p class="text-xl text-gray-300 leading-relaxed">
+          Vikram Gupta is a self-made billionaire and visionary entrepreneur with a current net worth of $1.2 Billion. Starting from humble beginnings in Gujarat, India, he moved to the USA at age 20 in 2001 with just $500 and built an empire through sheer discipline, strategic risk-taking, and global vision.  
+          Today he is a leading real estate developer, crypto investor, financier, and owner of TitanFlow Finance — a premium investment and financing platform. He owns 20+ luxury clubs worldwide, 10+ fine-dining restaurants, a private jet, 35+ supercars, and a personal watch collection valued at over $50 Million featuring rare Patek Philippe, Rolex, Audemars Piguet, and Richard Mille pieces.
+        </p>
+        <img src="https://instasize.com/api/image/578cfb6482ff9ece79d25ebbce7e0cfe55d6da3937f55024c09061c5643ea9f0.jpeg?download=true" class="mt-12 rounded-2xl mx-auto" alt="Vikram Gupta">
+      </div>
     </div>
   </section>
 
   <!-- Journey -->
-  <section class="py-12">
-    <div class="max-w-4xl mx-auto px-6 card">
-      <h2 class="text-3xl font-bold mb-6">Zero to Hero Journey</h2>
-      <p class="text-lg">
-        In 2001, at the age of 20, I left my village in Gujarat, India, with a one-way ticket to the USA and only $500 in my pocket. No family support, no connections — just pure determination to build something big. The early years were tough: worked as a waiter by day and taxi driver by night. Saved every dollar. In 2005, bought my first small apartment and flipped it for profit. That one deal gave me the confidence to scale. Expanded into real estate, entered crypto in 2017, launched TitanFlow Finance in 2019. Built a fleet of 35+ supercars, acquired a private jet, and assembled a watch collection worth over $50 Million. Discipline, vision, and relentless execution turned nothing into a $1.2 Billion empire.
-      </p>
-      <img src="https://instasize.com/api/image/6dbc8080fd08d231795932277757809d633075b734539780449525f83c60cb1a.jpeg?download=true" alt="Journey" class="mt-8 rounded-xl mx-auto">
+  <section id="journey" class="py-24 bg-black">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-6xl font-black text-yellow-400 mb-12 text-center">Zero to Hero Journey</h2>
+      <div class="card bg-zinc-900/80 p-12 rounded-3xl backdrop-blur-lg">
+        <p class="text-xl text-gray-300 leading-relaxed">
+          In 2001, at just 20 years old, Vikram Gupta left his small village in Gujarat, India, with a one-way ticket to the USA and only $500 in his pocket. No family wealth, no connections — only unbreakable determination. The first years were brutal: he worked as a waiter by day and taxi driver by night to survive. Every dollar saved went toward the dream.  
+          In 2005, he bought his first small apartment and flipped it for profit — that single deal became the spark. He scaled aggressively into real estate development, entered the cryptocurrency market early in 2017, founded TitanFlow Finance in 2019, and expanded into luxury hospitality. Over time, he acquired a private jet for global mobility, built a collection of 35+ supercars (including limited-edition Lamborghinis, Ferraris, Bugattis, and Rolls-Royces), and assembled a watch collection now valued at over $50 Million. From sleeping on friends' couches to owning private jets and a $1.2 Billion empire — it was never luck, only discipline, vision, and relentless execution.
+        </p>
+        <img src="https://instasize.com/api/image/6dbc8080fd08d231795932277757809d633075b734539780449525f83c60cb1a.jpeg?download=true" class="mt-12 rounded-2xl mx-auto" alt="Journey">
+      </div>
     </div>
   </section>
 
-  <!-- Business Empire -->
-  <section class="py-12 bg-gray-50">
-    <div class="max-w-4xl mx-auto px-6 card">
-      <h2 class="text-3xl font-bold mb-6">The Empire</h2>
-      <ul class="text-lg space-y-3 list-disc pl-6">
-        <li>Real estate developer — luxury residential & commercial projects in India & USA</li>
-        <li>Crypto investor & financier — strong digital asset portfolio</li>
-        <li>Owner of TitanFlow Finance — strategic investment & financing platform</li>
-        <li>Owner of 20+ luxury clubs worldwide — elite nightlife & entertainment</li>
-        <li>Owner of 10+ fine-dining restaurants — global hospitality experiences</li>
-        <li>Private jet owner — for seamless worldwide travel</li>
-        <li>Collection of 35+ supercars</li>
-        <li>Watch collection valued over $50 Million</li>
-      </ul>
-      <img src="https://instasize.com/api/image/5e5fa2c4c1ecc6b84250856198ebf3a8627688be77a4173bf01eeb7e0bca40d4.jpeg?download=true" alt="Empire" class="mt-8 rounded-xl mx-auto">
-    </div>
-  </section>
-
-  <!-- Contact Form -->
-  <section class="py-16">
-    <div class="max-w-4xl mx-auto px-6 text-center card">
-      <h2 class="text-3xl font-bold mb-6">Business Collaboration / Mentorship</h2>
-      <p class="text-lg mb-8">If you're serious about real estate, crypto, finance, luxury clubs/restaurants or investments — submit your details below.</p>
-      <form class="max-w-lg mx-auto space-y-6">
-        <input type="text" placeholder="Full Name" class="w-full p-4 border border-gray-300 rounded-lg">
-        <input type="email" placeholder="Email Address" class="w-full p-4 border border-gray-300 rounded-lg">
-        <input type="tel" placeholder="Phone Number (with country code)" class="w-full p-4 border border-gray-300 rounded-lg">
-        <textarea placeholder="Your idea, business or question" rows="5" class="w-full p-4 border border-gray-300 rounded-lg"></textarea>
-        <button type="submit" class="w-full py-4 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700">
-          Submit
+  <!-- Contact -->
+  <section id="contact" class="py-24 bg-black border-t border-yellow-700/40">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-5xl font-black text-yellow-400 mb-8">Business Collaboration / Mentorship</h2>
+      <p class="text-2xl text-gray-300 mb-12">Serious inquiries only — submit your details to connect on real estate, crypto, finance, luxury clubs/restaurants, investments, or empire building.</p>
+      <form class="max-w-2xl mx-auto space-y-8">
+        <input type="text" placeholder="Full Name" class="w-full p-6 bg-zinc-900 border border-yellow-700/50 rounded-xl text-lg focus:border-yellow-400">
+        <input type="email" placeholder="Email Address" class="w-full p-6 bg-zinc-900 border border-yellow-700/50 rounded-xl text-lg focus:border-yellow-400">
+        <input type="tel" placeholder="Phone Number (with country code)" class="w-full p-6 bg-zinc-900 border border-yellow-700/50 rounded-xl text-lg focus:border-yellow-400">
+        <textarea placeholder="Your idea, business, question or proposal" rows="5" class="w-full p-6 bg-zinc-900 border border-yellow-700/50 rounded-xl text-lg focus:border-yellow-400"></textarea>
+        <button type="submit" class="w-full py-7 bg-yellow-500 text-black text-2xl font-bold rounded-xl hover:bg-yellow-400 transition shadow-2xl">
+          Submit Application
         </button>
       </form>
+      <p class="mt-6 text-gray-400 text-sm">We'll respond to serious inquiries within 48 hours.</p>
+    </div>
+  </section>
+
+  <!-- Address & Map -->
+  <section class="py-20 bg-black border-t border-yellow-700/40">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <h2 class="text-5xl font-black text-yellow-400 mb-8">Headquarters</h2>
+      <p class="text-2xl text-gray-300 mb-6">
+        G-71, Vardhman Crown Mall, Sector-19, Dwarka  
+        New Delhi - 110075, India  
+      </p>
+      <p class="text-2xl text-yellow-400 mb-12 font-bold">
+        Global Residence: Beverly Hills, California  
+        1234 Rodeo Drive, Beverly Hills, CA 90210, USA
+      </p>
+
+      <!-- Map Embed (Google Maps style iframe) -->
+      <div class="rounded-2xl overflow-hidden shadow-2xl neon-gold">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.817!2d-118.420!3d34.073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2a4b5f5f5f5f5%3A0x5f5f5f5f5f5f5f5f!2sRodeo+Drive%2C+Beverly+Hills%2C+CA+90210%2C+USA!5e0!3m2!1sen!2sus!4v1690000000000" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer class="py-12 text-center text-gray-600 border-t">
-    <p>© 2021 Shoutout LA Archive • Vikram Tycoon Profile</p>
-    <a href="https://www.instagram.com/vikram.tycoon" target="_blank" class="text-blue-600 hover:underline mt-4 inline-block">
-      <i class="fab fa-instagram mr-2"></i> @vikram.tycoon
+  <footer class="py-12 bg-black text-center text-gray-400 border-t border-yellow-700/40">
+    <p>© 2021 Shoutout LA Archive • Vikram Gupta Profile</p>
+    <a href="https://www.instagram.com/vikram.tycoon" target="_blank" class="text-3xl text-yellow-400 hover:text-yellow-300 mt-4 inline-block">
+      <i class="fab fa-instagram"></i> @vikram.tycoon
     </a>
   </footer>
 
+  <script>
+    // Animated Counters
+    function animateCounter(id, start, end, duration) {
+      let obj = document.getElementById(id);
+      let range = end - start;
+      let current = start;
+      let increment = end > start? 1 : -1;
+      let stepTime = Math.abs(Math.floor(duration / range));
+      let timer = setInterval(() => {
+        current += increment;
+        obj.textContent = current.toLocaleString();
+        if (current >= end) {
+          obj.textContent = end.toLocaleString();
+          clearInterval(timer);
+        }
+      }, stepTime);
+    }
+
+    window.addEventListener('load', () => {
+      animateCounter('networth', 0, 1200000000, 3000);
+      animateCounter('cars', 0, 35, 2000);
+      animateCounter('watches', 0, 50, 2000);
+      animateCounter('clubs', 0, 20, 2000);
+    });
+  </script>
 </body>
 </html>
