@@ -1,166 +1,82 @@
-body{
-
-margin:0;
-font-family:Arial;
-background:#0b0f19;
-color:white;
-
-}
-
-header{
-
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 8%;
-background:#061a2b;
-position:fixed;
-width:100%;
-
-}
-
-.logo{
-
-font-size:26px;
-font-weight:bold;
-
-}
-
-nav a{
-
-margin-left:30px;
-color:white;
-text-decoration:none;
-
-}
-
 .hero{
 
 height:100vh;
+
+background:
+linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
+url("https://images.unsplash.com/photo-1508057198894-247b23fe5ade?q=80&w=3000&auto=format&fit=crop") center/cover no-repeat;
+
 display:flex;
-align-items:center;
+flex-direction:column;
 justify-content:center;
-text-align:center;
-position:relative;
+padding:0 10%;
+color:white;
 
 }
 
-.hero img{
+/* TOP BAR */
+
+.top-bar{
 
 position:absolute;
+top:0;
 width:100%;
-height:100%;
-object-fit:cover;
-filter:brightness(60%);
+background:rgba(0,0,0,0.7);
+padding:15px 10%;
+font-size:14px;
+letter-spacing:1px;
 
 }
 
-.hero-text{
+/* HERO TEXT */
 
-position:relative;
+.hero-content h5{
+
+color:#d4af37;
+letter-spacing:3px;
+font-size:16px;
+margin-bottom:20px;
 
 }
 
-.hero-text h1{
+.hero-content h1{
 
 font-size:90px;
+font-weight:700;
+line-height:1.1;
 
 }
 
-.hero-text p{
+/* BUTTON */
 
-color:#d4af37;
-font-size:22px;
+.hero-btn{
 
-}
-
-section{
-
-padding:120px 10%;
-
-}
-
-.grid{
-
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:30px;
+background:#e11d48;
+color:white;
+border:none;
+padding:18px 45px;
+font-size:18px;
+margin-top:30px;
+cursor:pointer;
+transition:0.3s;
 
 }
 
-.card{
+.hero-btn:hover{
 
-background:#111827;
-padding:20px;
-border-radius:10px;
-text-align:center;
+background:#be123c;
+transform:scale(1.05);
 
 }
 
-.card img{
+/* CONSULT */
 
-width:100%;
-height:200px;
-object-fit:cover;
-border-radius:10px;
+.consultant{
 
-}
-
-.stats{
-
-background:#061a2b;
-
-}
-
-.counter{
-
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:40px;
-text-align:center;
-
-}
-
-.counter h2{
-
-color:#d4af37;
-font-size:40px;
-
-}
-
-.quote-slider{
-
-overflow:hidden;
-white-space:nowrap;
-
-}
-
-.quote-track{
-
-display:inline-block;
-animation:scroll 25s linear infinite;
-
-}
-
-.quote-track span{
-
-margin:0 40px;
+display:flex;
+align-items:center;
+margin-top:30px;
 font-size:20px;
-
-}
-
-@keyframes scroll{
-
-0%{transform:translateX(0)}
-
-100%{transform:translateX(-100%)}
-
-}
-
-footer{
-
-text-align:center;
-padding:50px;
-background:black;
+gap:10px;
 
 }
