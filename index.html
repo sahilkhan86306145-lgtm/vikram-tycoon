@@ -1,51 +1,477 @@
 <!DOCTYPE html>
 <html>
-
 <head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Vikram Tycoon</title>
 
-<link rel="stylesheet" href="style.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:#0b0b0b;
+color:white;
+scroll-behavior:smooth;
+}
+
+/* HEADER */
+
+header{
+background:#0a1c2e;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:26px;
+font-weight:bold;
+letter-spacing:2px;
+}
+
+nav a{
+margin-left:30px;
+color:white;
+text-decoration:none;
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+background:url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab") center/cover;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:0 20px;
+}
+
+.hero h1{
+font-size:90px;
+letter-spacing:4px;
+}
+
+.hero p{
+max-width:900px;
+font-size:20px;
+color:#c9a35a;
+}
+
+/* SECTIONS */
+
+section{
+padding:120px 10%;
+}
+
+.dark{
+background:#111;
+}
+
+.blue{
+background:#071c34;
+}
+
+.gold{
+color:#c9a35a;
+font-size:60px;
+font-weight:bold;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:40px;
+}
+
+.card{
+background:#141414;
+padding:40px;
+border-radius:10px;
+}
+
+/* COUNTERS */
+
+.counter{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:50px;
+text-align:center;
+}
+
+.counter h2{
+font-size:55px;
+color:#c9a35a;
+}
+
+/* BUSINESS PHOTOS */
+
+.business{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.business img{
+width:100%;
+border-radius:10px;
+}
+
+.business p{
+margin-top:15px;
+}
+
+/* MAP */
+
+.map{
+height:500px;
+background:url("https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg") center/cover;
+}
+
+/* QUOTES */
+
+.quote{
+max-width:900px;
+margin:40px auto;
+font-size:20px;
+line-height:1.8;
+}
+
+/* FOOTER */
+
+footer{
+background:black;
+text-align:center;
+padding:100px 10%;
+}
+
+</style>
 
 </head>
 
 <body>
 
+<header>
+
+<div class="logo">Vikram Tycoon</div>
+
+<nav>
+
+<a href="#">Home</a>
+<a href="#">Business</a>
+<a href="#">Empire</a>
+<a href="#">Quotes</a>
+
+</nav>
+
+</header>
+
+
+<!-- HERO -->
+
 <section class="hero">
+
+<div>
 
 <h1>Vikram Tycoon</h1>
 
 <p>
-Billionaire Entrepreneur • Real Estate Developer • TitanFlow Finance Founder •
+
+Billionaire Entrepreneur • Real Estate Developer • TitanFlow Finance Founder  
 Owner of 20 Luxury Clubs • Owner of 10 Luxury Restaurants • Crypto Investor
+
 </p>
+
+</div>
 
 </section>
 
-<section class="section">
+
+<!-- ABOUT -->
+
+<section class="dark">
 
 <h2>About</h2>
 
 <p>
-Vikram Tycoon is a billionaire entrepreneur known for building powerful ventures
-across hospitality, finance and real estate. He is the founder of TitanFlow Finance
-and owns more than 20 luxury nightclubs and 10 premium restaurants worldwide.
+
+Vikram Tycoon is a global entrepreneur building powerful ventures across hospitality,
+real estate and financial investment industries.
+
+He founded TitanFlow Finance and owns more than 20 luxury nightclubs
+and 10 premium restaurants across international markets.
+
 </p>
 
 </section>
 
-<section class="section networth">
+
+<!-- NET WORTH -->
+
+<section class="blue">
 
 <h2>Net Worth</h2>
 
-<div class="worth">$1.2 Billion</div>
+<div class="gold">$1.2 Billion</div>
 
 <p>
-Through diversified investments across hospitality, real estate and digital assets,
-Vikram Tycoon has built a global business empire.
+
+Through diversified investments across global hospitality,
+real estate and digital assets, Vikram Tycoon has built
+a billion-dollar business empire.
+
 </p>
 
 </section>
 
+
+<!-- BUSINESS EMPIRE -->
+
+<section class="dark">
+
+<h2>Business Empire</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>Real Estate Development</h3>
+
+<p>
+
+Luxury commercial developments and strategic property investments
+across global markets.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>TitanFlow Finance</h3>
+
+<p>
+
+Investment platform delivering modern financial strategies
+for capital growth.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Luxury Nightclubs</h3>
+
+<p>
+
+Ownership of more than 20 luxury nightlife venues across
+international cities.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Luxury Restaurants</h3>
+
+<p>
+
+More than 10 premium restaurants delivering world-class
+hospitality experiences.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- COUNTERS -->
+
+<section class="blue">
+
+<div class="counter">
+
+<div>
+
+<h2 data-count="350">0</h2>
+
+<p>Expert Consultants</p>
+
+</div>
+
+<div>
+
+<h2 data-count="100000">0</h2>
+
+<p>Trusted Clients</p>
+
+</div>
+
+<div>
+
+<h2 data-count="12000">0</h2>
+
+<p>Orders In Queue</p>
+
+</div>
+
+<div>
+
+<h2 data-count="8500">0</h2>
+
+<p>Projects Delivered</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- BUSINESS PHOTOS -->
+
+<section class="dark">
+
+<div class="business">
+
+<div>
+
+<img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70">
+
+<p>
+
+Building luxury lifestyle brands requires vision,
+discipline and relentless execution.
+
+</p>
+
+</div>
+
+<div>
+
+<img src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d">
+
+<p>
+
+Global investment opportunities are created by
+thinking beyond local markets.
+
+</p>
+
+</div>
+
+<div>
+
+<img src="https://images.unsplash.com/photo-1549924231-f129b911e442">
+
+<p>
+
+Successful entrepreneurs focus on building assets
+that generate long-term value.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- MAP -->
+
+<section class="blue">
+
+<h2>TitanFlow Finance Works Everywhere</h2>
+
+<div class="map"></div>
+
+</section>
+
+
+<!-- QUOTES -->
+
+<section class="dark">
+
+<h2>Billionaire Mindset</h2>
+
+<div id="quotes"></div>
+
+</section>
+
+
+<footer>
+
+<h2>Follow</h2>
+
+<p>Instagram: @vikram.tycoon</p>
+
+</footer>
+
+
+<script>
+
+const counters=document.querySelectorAll('[data-count]')
+
+counters.forEach(counter=>{
+
+let target=+counter.dataset.count
+let count=0
+
+let update=()=>{
+
+count+=target/200
+
+if(count<target){
+
+counter.innerText=Math.floor(count)
+
+requestAnimationFrame(update)
+
+}
+
+else{
+
+counter.innerText=target.toLocaleString()
+
+}
+
+}
+
+update()
+
+})
+
+
+const quotesContainer=document.getElementById("quotes")
+
+const quoteText="Success in business is built through discipline, strategy, persistence and the courage to think bigger than ordinary limits."
+
+for(let i=1;i<=100;i++){
+
+let q=document.createElement("div")
+
+q.className="quote"
+
+q.innerText=i+". "+quoteText
+
+quotesContainer.appendChild(q)
+
+}
+
+</script>
+
 </body>
+
 </html>
