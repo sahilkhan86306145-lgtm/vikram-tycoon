@@ -1,13 +1,13 @@
 <!DOCTYPE html><html lang="en">
 <head><meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Vikram Tycoon</title><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet"><style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Vikram Tycoon</title><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet"><!-- GLOBE --><script src="https://unpkg.com/three@0.152.2/build/three.min.js"></script><script src="https://unpkg.com/globe.gl"></script><style>
 
 *{margin:0;padding:0;box-sizing:border-box}
 
 body{
-font-family:Inter;
 background:#000;
 color:#fff;
+font-family:Inter;
 overflow-x:hidden;
 }
 
@@ -25,12 +25,12 @@ z-index:9999;
 }
 
 .car{
-width:300px;
+width:280px;
 animation:drive 2s linear forwards;
 }
 
 @keyframes drive{
-0%{transform:translateX(-200px);}
+0%{transform:translateX(-300px);}
 100%{transform:translateX(120vw);}
 }
 
@@ -46,7 +46,7 @@ transition:1s;
 header{
 position:fixed;
 width:100%;
-padding:20px 50px;
+padding:20px 40px;
 display:flex;
 justify-content:space-between;
 background:rgba(0,0,0,0.6);
@@ -56,20 +56,20 @@ z-index:10;
 
 .logo{
 font-family:Playfair Display;
-font-size:26px;
+font-size:28px;
 }
 
 nav a{
-margin-left:25px;
+margin-left:20px;
 color:#fff;
 text-decoration:none;
 }
 
-/* HERO */
+/* HERO (YOUR IMAGE) */
 
 .hero{
 height:100vh;
-background:url("https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=4000") center/cover no-repeat;
+background:url("https://i.postimg.cc/V5CyKd0D/image.jpg") center/cover no-repeat;
 display:flex;
 align-items:center;
 justify-content:center;
@@ -86,12 +86,35 @@ color:gold;
 margin-top:10px;
 }
 
-/* NET WORTH */
+/* BUSINESS */
+
+.business{
+padding:100px 20px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:#111;
+padding:20px;
+border-radius:10px;
+}
+
+.card img{
+width:100%;
+border-radius:10px;
+}
+
+/* NET */
 
 .net{
-padding:100px;
+padding:80px;
 text-align:center;
-background:#111;
+background:#050b18;
 }
 
 .net h2{
@@ -99,85 +122,105 @@ font-size:50px;
 color:gold;
 }
 
-/* BUSINESS */
-
-.business{
-padding:100px;
-}
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:30px;
-}
-
-.card{
-background:#111;
-padding:30px;
-border-radius:10px;
-text-align:center;
-}
-
 /* QUOTES */
 
 .quotes{
-padding:100px;
+padding:80px 20px;
 }
 
 .quote-grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:15px;
 }
 
 .quote{
 background:#111;
-padding:20px;
+padding:15px;
 border-radius:10px;
 font-size:14px;
 }
 
-</style></head><body><div class="intro">
-<img src="https://images.unsplash.com/photo-1549921296-3ecf9c6a1d35?q=80&w=2000" class="car">
+/* GLOBE */
+
+.globe-section{
+padding:80px 20px;
+text-align:center;
+background:#050b18;
+}
+
+#globe{
+width:100%;
+height:400px;
+}
+
+/* INSTAGRAM */
+
+.insta{
+display:inline-block;
+margin-top:20px;
+padding:10px 20px;
+background:gold;
+color:#000;
+border-radius:20px;
+text-decoration:none;
+font-weight:bold;
+}
+
+</style></head><body><!-- INTRO --><div class="intro">
+<img src="https://images.unsplash.com/photo-1549921296-3ecf9c6a1d35?w=2000&q=100" class="car">
 </div><div class="main"><header>
 <div class="logo">Vikram Tycoon</div>
 <nav>
 <a href="#">Home</a>
 <a href="#">Empire</a>
 </nav>
-</header><section class="hero">
+</header><!-- HERO --><section class="hero">
 <div>
 <h1>Vikram Tycoon</h1>
-<p>$1.2 Billion Business Empire</p>
-</div>
-</section><section class="net">
+<p>$1.2 Billion Business Empire</p><a href="https://www.instagram.com/vikram.tycoon/" target="_blank" class="insta">
+@vikram.tycoon
+</a></div>
+</section><!-- BUSINESS --><section class="business"><h2>Business Empire</h2><div class="grid"><div class="card">
+<img src="https://i.postimg.cc/V5CyKd0D/image.jpg">
+<p>Real Estate Developer</p>
+</div><div class="card">
+<img src="https://i.postimg.cc/Hr3FrMFV/image.jpg">
+<p>TitanFlow Finance Owner</p>
+</div><div class="card">
+<img src="https://i.postimg.cc/gwT5DWzm/image.jpg">
+<p>Financier</p>
+</div><div class="card">
+<img src="https://i.postimg.cc/gXL7tTjg/image.jpg">
+<p>Crypto Investor</p>
+</div></div></section><!-- NET --><section class="net">
 <h2>$1.2 Billion Net Worth</h2>
-</section><section class="business"><h2>Business Empire</h2><div class="grid"><div class="card">Real Estate Developer</div>
-<div class="card">TitanFlow Finance Owner</div>
-<div class="card">Financier</div>
-<div class="card">Crypto Investor</div></div></section><section class="quotes"><h2>Billionaire Mindset</h2><div class="quote-grid"><script>
+</section><!-- QUOTES --><section class="quotes"><h2>Billionaire Mindset</h2><div class="quote-grid" id="quotes"></div></section><!-- GLOBE --><section class="globe-section"><h2>Global Presence</h2><div id="globe"></div></section></div><script>
 
-let container=document.currentScript.parentElement
-
-for(let i=1;i<=100;i++){
-
-let div=document.createElement("div")
-div.className="quote"
-div.innerText=i+". Success comes from discipline, vision and long-term thinking."
-container.appendChild(div)
-
-}
-
-</script></div></section></div><script>
-
+// INTRO
 window.onload=()=>{
-
 setTimeout(()=>{
 document.querySelector(".intro").style.display="none"
 document.querySelector(".main").style.opacity="1"
 },2000)
-
 }
+
+// QUOTES (100)
+const qbox=document.getElementById("quotes");
+
+for(let i=1;i<=100;i++){
+let d=document.createElement("div");
+d.className="quote";
+d.innerText=i+". Success is built through discipline and vision.";
+qbox.appendChild(d);
+}
+
+// GLOBE
+const globe = Globe()(document.getElementById('globe'))
+.globeImageUrl('//unpkg.com/three-globe/example/img/earth-dark.jpg')
+.backgroundColor('#050b18');
+
+globe.controls().autoRotate = true;
 
 </script></body>
 </html>
