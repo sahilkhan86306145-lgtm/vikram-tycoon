@@ -1,128 +1,79 @@
+
 <!DOCTYPE html><html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Vikram Tycoon</title><script src="https://cdn.tailwindcss.com"></script><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet"><script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script><style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Vikram Notes</title><script src="https://cdn.tailwindcss.com"></script><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"><style>
 body{
-background:#0b0f1a;
-color:#fff;
 font-family:Inter;
-margin:0;
-overflow-x:hidden;
+background:#ffffff;
+color:#111827;
+line-height:1.9;
 }
 
-h1,h2{font-family:"Playfair Display",serif;}
+h1,h2{
+font-family:"Playfair Display",serif;
+}
 
-nav{
-background:rgba(255,255,255,0.05);
-backdrop-filter:blur(15px);
-position:fixed;
+.container{
+max-width:780px;
+margin:auto;
+padding:20px;
+}
+
+img{
 width:100%;
-z-index:100;
+border-radius:12px;
+margin:30px 0;
 }
 
-/* HERO */
-.hero{
-height:100vh;
-background:url("https://i.postimg.cc/mP6jsynY/your-image.jpg") center/cover no-repeat;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-position:relative;
+.section{
+margin-top:80px;
 }
 
-.hero::after{
-content:"";
-position:absolute;
-inset:0;
-background:rgba(0,0,0,0.5);
+.quote{
+font-style:italic;
+border-left:4px solid #2563eb;
+padding-left:15px;
+margin-top:20px;
 }
-
-.hero-content{position:relative;z-index:2;}
-
-.btn{
-background:linear-gradient(135deg,#d4af37,#f5d76e);
-padding:12px 30px;
-border-radius:30px;
-color:#000;
-}
-
-/* CARDS */
-.card{
-background:rgba(255,255,255,0.05);
-border-radius:16px;
-overflow:hidden;
-transition:0.4s;
-}
-.card:hover{
-transform:translateY(-10px);
-}
-
-/* PARALLAX */
-.parallax{
-background-attachment:fixed;
-background-size:cover;
-background-position:center;
-}
-
-/* GLOBE */
-#globe{
-width:100%;
-height:300px;
-}
-
-</style></head><body><!-- NAV --><nav class="p-5 flex justify-between px-6">
-<h1 class="text-yellow-400 text-2xl">Vikram Tycoon</h1>
-<div class="flex gap-6">
-<a href="#about">About</a>
-<a href="#empire">Empire</a>
-<a href="#mindset">Mindset</a>
-</div>
-</nav><!-- HERO --><section class="hero"><div class="hero-content"><h1 class="text-5xl mb-4">Vikram Tycoon</h1><p class="text-yellow-400 text-xl">$1.2 Billion Business Empire</p><p class="mt-4">Real Estate • Finance • Crypto • TitanFlow</p><a href="https://instagram.com/vikram.tycoon" class="btn mt-6 inline-block">
+</style></head><body><!-- HERO --><div class="container"><h1 class="text-5xl md:text-6xl mt-20 mb-6">
+The website of Vikram Tycoon
+</h1><p class="text-xl text-gray-700 mb-10">
+Vikram Tycoon is a self-made billionaire with a $1.2 billion net worth.  
+His journey spans real estate, finance, crypto investments, and luxury hospitality.
+</p><img src="https://i.postimg.cc/mP6jsynY/image.jpg"></div><!-- JOURNEY --><div class="container section"><h2 class="text-4xl mb-6">Journey</h2><p>
+Vikram Tycoon started his journey with a vision to build something beyond ordinary success. 
+He entered the real estate market with limited resources but strong discipline and long-term thinking. 
+Instead of chasing short-term gains, he focused on building assets that could scale over time.
+</p><p class="mt-6">
+As his experience grew, he expanded into financial markets and founded TitanFlow Finance. 
+This move allowed him to operate on a larger scale, managing capital, investments, and strategic funding. 
+His ability to understand risk and opportunity gave him a strong advantage.
+</p><p class="mt-6">
+With the rise of digital assets, he entered the crypto space early and built a diversified portfolio. 
+Alongside this, he created a global presence in luxury hospitality — owning clubs and restaurants 
+that cater to elite audiences worldwide.
+</p></div><!-- WORK --><div class="container section"><h2 class="text-4xl mb-6">Work & Empire</h2><img src="https://i.postimg.cc/CnNC6GDQ/image.jpg"><p>
+His work spans across multiple industries. In real estate, he develops premium residential 
+and commercial spaces. Through TitanFlow Finance, he operates as a financier, providing 
+capital and strategic investment opportunities.
+</p><img src="https://i.postimg.cc/0bkh5ZVF/image.jpg"><p>
+In the crypto sector, he focuses on long-term value creation rather than speculation. 
+His hospitality ventures include luxury clubs and fine dining restaurants designed 
+for high-end clientele.
+</p></div><!-- QUOTES --><div class="container section"><h2 class="text-4xl mb-6">Mindset</h2><p class="quote">
+Success is built through discipline and long-term execution when no one is watching.
+</p><p class="quote">
+Money follows value. Focus on building systems, not chasing shortcuts.
+</p><p class="quote">
+Luxury is not what you show — it is what you can afford silently.
+</p><p class="quote">
+Discipline beats motivation. Winners show up every day.
+</p><p class="quote">
+To reach the top 1%, you must stay consistent longer than everyone else.
+</p></div><!-- FOOTER --><div class="container section text-center text-gray-500 mb-20"><p>© 2020 Vikram Notes</p><p class="mt-3">
+<a href="https://instagram.com/vikram.tycoon" class="text-blue-600">
 @vikram.tycoon
-</a></div></section><!-- 3D GLOBE --><div id="globe"></div><!-- EMPIRE --><section id="empire" class="p-10 grid gap-6"><div class="card">
-<img src="https://i.postimg.cc/CnNC6GDQ/your2.jpg">
-<h2 class="p-4">Crypto Investor</h2>
-</div><div class="card">
-<img src="https://i.postimg.cc/0bkh5ZVF/your3.jpg">
-<h2 class="p-4">TitanFlow Finance</h2>
-</div><div class="card">
-<img src="https://i.postimg.cc/CRt2N0S3/your4.jpg">
-<h2 class="p-4">Financier</h2>
-</div><div class="card">
-<img src="https://i.postimg.cc/62x1kh26/your5.jpg">
-<h2 class="p-4">Real Estate Developer</h2>
-</div></section><!-- PARALLAX SECTION --><section class="parallax h-64 flex items-center justify-center text-3xl"
-style="background-image:url('https://i.postimg.cc/mP6jsynY/your-image.jpg')">
-Elite Vision
-</section><!-- QUOTES --><section id="mindset" class="p-10 space-y-6"><div class="bg-white/10 p-4 rounded">Discipline creates billionaires.</div>
-<div class="bg-white/10 p-4 rounded">Think long term.</div>
-<div class="bg-white/10 p-4 rounded">Money follows value.</div>
-<div class="bg-white/10 p-4 rounded">Execution beats ideas.</div>
-<div class="bg-white/10 p-4 rounded">Silence is real power.</div></section><script>
-
-// 3D GLOBE
-const scene = new THREE.Scene();
-const camera = new THREE.PerspectiveCamera(75, window.innerWidth/300, 0.1, 1000);
-const renderer = new THREE.WebGLRenderer();
-
-renderer.setSize(window.innerWidth, 300);
-document.getElementById("globe").appendChild(renderer.domElement);
-
-const geometry = new THREE.SphereGeometry(2,32,32);
-const material = new THREE.MeshBasicMaterial({wireframe:true});
-const sphere = new THREE.Mesh(geometry,material);
-
-scene.add(sphere);
-camera.position.z = 5;
-
-function animate(){
-requestAnimationFrame(animate);
-sphere.rotation.y += 0.01;
-renderer.render(scene,camera);
-}
-
-animate();
-
-</script></body>
+</a>
+</p></div></body>
 </html>
