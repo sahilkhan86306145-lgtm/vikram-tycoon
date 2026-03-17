@@ -11,6 +11,7 @@
     h1, h2, h3 { font-family: Georgia, serif; }
     .blue-link { color: #0067c5; }
     .blue-link:hover { text-decoration: underline; }
+    .section-header { font-size: 2.75rem; }
   </style>
 </head>
 <body>
@@ -20,8 +21,9 @@
     <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
       <h1 class="text-3xl font-serif font-bold blue-link">Vikram Notes</h1>
       <div class="flex gap-10 text-lg">
-        <a href="#stories" class="blue-link hover:underline">Stories</a>
-        <a href="#heroes" class="blue-link hover:underline">Heroes</a>
+        <a href="#about" class="blue-link hover:underline">About</a>
+        <a href="#work" class="blue-link hover:underline">Work</a>
+        <a href="#quotes" class="blue-link hover:underline">Mindset</a>
         <a href="#newsletter" class="blue-link hover:underline">Newsletter</a>
       </div>
     </div>
@@ -33,96 +35,115 @@
       <h1 class="text-6xl md:text-7xl font-serif font-bold leading-tight mb-8">
         The website of Vikram Tycoon
       </h1>
-      <p class="text-2xl md:text-3xl text-gray-700 mb-10">
-        Here I share thoughts on building empires, luxury experiences, global moves, what I'm learning, and the people shaping success.
+      <p class="text-2xl md:text-3xl text-gray-700 mb-6">
+        Vikram Tycoon is a self-made billionaire with a <span class="font-bold text-blue-600">$1.2 Billion net worth</span>.
       </p>
       <p class="text-xl italic text-gray-600 mb-12">
-        Discipline. Vision. Impact. Come join the journey.
+        Real estate developer, crypto investor, financier, owner of TitanFlow Finance, 20+ luxury clubs worldwide and 10+ fine-dining restaurants.
       </p>
       <!-- Hero Photo (first link) -->
-      <img src="https://instasize.com/api/image/578cfb6482ff9ece79d25ebbce7e0cfe55d6da3937f55024c09061c5643ea9f0.jpeg?download=true" 
-           alt="Vikram Tycoon - Empire Builder" 
+      <img src="https://instasize.com/p/578cfb6482ff9ece79d25ebbce7e0cfe55d6da3937f55024c09061c5643ea9f0" 
+           alt="Vikram Tycoon" 
            class="mx-auto rounded-xl shadow-2xl max-w-4xl w-full mb-12">
-      <a href="#newsletter" class="inline-block px-12 py-5 bg-blue-600 text-white text-xl font-medium rounded hover:bg-blue-700 transition">
-        Get Updates in Your Inbox
+      <a href="#about" class="inline-block px-12 py-5 bg-blue-600 text-white text-xl font-medium rounded hover:bg-blue-700 transition">
+        Learn More About Vikram →
       </a>
     </div>
   </section>
 
-  <!-- STORIES / FEATURED -->
-  <section id="stories" class="py-20 bg-gray-50">
+  <!-- ABOUT / BIO -->
+  <section id="about" class="py-20 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="section-header font-bold text-center mb-12">Who is Vikram Tycoon?</h2>
+      <div class="prose prose-lg max-w-none text-gray-700">
+        <p class="mb-8">
+          Vikram Tycoon is one of India’s most dynamic self-made billionaires. Starting from humble beginnings in Delhi, he has built a global empire spanning real estate development, cryptocurrency investments, luxury hospitality, and high-stakes finance.
+        </p>
+        <p class="mb-8">
+          With a current net worth of <strong>$1.2 Billion</strong>, Vikram is known for his disciplined approach and visionary thinking. He owns and operates TitanFlow Finance, 20+ luxury clubs across the world, and 10+ premium restaurants that have redefined high-end dining experiences.
+        </p>
+        <a href="#work" class="blue-link text-xl font-medium">Learn more about his businesses →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK / EMPIRE DETAILS -->
+  <section id="work" class="py-20 bg-white">
     <div class="max-w-5xl mx-auto px-6">
-      <h2 class="text-5xl font-serif font-bold text-center mb-16">Latest Reflections</h2>
-      <div class="grid md:grid-cols-2 gap-12">
-        <!-- Photo 2 -->
-        <div class="bg-white rounded-xl shadow-md overflow-hidden">
-          <img src="https://instasize.com/api/image/6dbc8080fd08d231795932277757809d633075b734539780449525f83c60cb1a.jpeg" 
-               alt="Luxury Moment 1" class="w-full h-64 object-cover">
-          <div class="p-8">
-            <h3 class="text-3xl font-bold mb-4">Building Lasting Empires</h3>
-            <p class="text-gray-700 text-lg mb-4">
-              From Delhi streets to global runways — every step is deliberate. Luxury is earned through consistency.
-            </p>
-            <a href="#" class="blue-link font-medium">Read more →</a>
-          </div>
+      <h2 class="section-header font-bold text-center mb-16">His Work & Empire</h2>
+      
+      <div class="grid md:grid-cols-2 gap-16">
+        <!-- Card 1 -->
+        <div class="bg-gray-50 p-10 rounded-2xl shadow">
+          <img src="https://instasize.com/p/6dbc8080fd08d231795932277757809d633075b734539780449525f83c60cb1a" 
+               class="w-full h-64 object-cover rounded-xl mb-8" alt="Real Estate">
+          <h3 class="text-3xl font-bold mb-4">Real Estate Developer</h3>
+          <p class="text-gray-700 text-lg">
+            Vikram has developed multiple luxury residential and commercial projects in India and internationally. His signature developments blend modern architecture with timeless elegance.
+          </p>
+          <a href="#" class="blue-link mt-6 inline-block font-medium">Learn more about his real estate portfolio →</a>
         </div>
 
-        <!-- Photo 3 -->
-        <div class="bg-white rounded-xl shadow-md overflow-hidden">
-          <img src="https://instasize.com/api/image/5e5fa2c4c1ecc6b84250856198ebf3a8627688be77a4173bf01eeb7e0bca40d4.jpeg" 
-               alt="Luxury Moment 2" class="w-full h-64 object-cover">
-          <div class="p-8">
-            <h3 class="text-3xl font-bold mb-4">Moments That Define Success</h3>
-            <p class="text-gray-700 text-lg mb-4">
-              Private jets, elite events, and real connections — this is where vision turns into legacy.
-            </p>
-            <a href="#" class="blue-link font-medium">Read more →</a>
-          </div>
+        <!-- Card 2 -->
+        <div class="bg-gray-50 p-10 rounded-2xl shadow">
+          <img src="https://instasize.com/p/5e5fa2c4c1ecc6b84250856198ebf3a8627688be77a4173bf01eeb7e0bca40d4" 
+               class="w-full h-64 object-cover rounded-xl mb-8" alt="Crypto & Finance">
+          <h3 class="text-3xl font-bold mb-4">Crypto Investor & Financier</h3>
+          <p class="text-gray-700 text-lg">
+            As a pioneer in digital assets, Vikram has built a significant crypto portfolio. Through TitanFlow Finance, he provides strategic investment and financing solutions to high-net-worth individuals and businesses.
+          </p>
+          <a href="#" class="blue-link mt-6 inline-block font-medium">Learn more about TitanFlow Finance →</a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-gray-50 p-10 rounded-2xl shadow md:col-span-2">
+          <img src="https://instasize.com/p/c6d84edf769e80cffc1c7fa1d832451a23b2f98eb7ea46c2a0b0f51dc578e5af" 
+               class="w-full h-80 object-cover rounded-xl mb-8" alt="Hospitality">
+          <h3 class="text-3xl font-bold mb-4">Luxury Hospitality Empire</h3>
+          <p class="text-gray-700 text-lg">
+            Owner of 20+ luxury clubs worldwide and 10+ fine-dining restaurants. Each venue is carefully curated to deliver unforgettable experiences for the global elite.
+          </p>
+          <a href="#" class="blue-link mt-6 inline-block font-medium">Explore the full hospitality portfolio →</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- HEROES / IMPACT -->
-  <section id="heroes" class="py-20 bg-white">
-    <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-5xl font-serif font-bold text-center mb-16">Faces of the Empire</h2>
-      <div class="grid md:grid-cols-3 gap-10">
-        <!-- Photo 4 -->
-        <div class="bg-gray-50 p-6 rounded-xl shadow">
-          <img src="https://instasize.com/api/image/c6d84edf769e80cffc1c7fa1d832451a23b2f98eb7ea46c2a0b0f51dc578e5af.jpeg" 
-               alt="Empire Hero 1" class="w-full h-64 object-cover rounded mb-6">
-          <h3 class="text-2xl font-bold mb-2">The Vision Architect</h3>
-          <p class="text-gray-600">Crafting $1.2B realities one disciplined move at a time.</p>
+  <!-- BILLIONAIRE QUOTES / MINDSET -->
+  <section id="quotes" class="py-20 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="section-header font-bold mb-16">Billionaire Mindset</h2>
+      
+      <div class="space-y-16">
+        <div>
+          <p class="text-3xl italic text-gray-700">"Success is not chased. It is built through relentless discipline, clear vision, and the courage to execute when others hesitate."</p>
+          <p class="mt-6 text-xl text-blue-600 font-medium">— Vikram Tycoon</p>
         </div>
-
-        <!-- Photo 5 -->
-        <div class="bg-gray-50 p-6 rounded-xl shadow">
-          <img src="https://instasize.com/api/image/9f8c8068e2d1d502ed3621ff57992a7d7add960ff9a5a384d860197795e6478c.jpeg" 
-               alt="Empire Hero 2" class="w-full h-64 object-cover rounded mb-6">
-          <h3 class="text-2xl font-bold mb-2">The Global Connector</h3>
-          <p class="text-gray-600">Networking at the highest levels — from cars to conversations.</p>
+        
+        <div>
+          <p class="text-3xl italic text-gray-700">"Money follows power. Power comes from knowledge and execution. I never chase money — I build systems that attract it."</p>
+          <p class="mt-6 text-xl text-blue-600 font-medium">— Vikram Tycoon</p>
         </div>
-
-        <!-- Placeholder for more if needed -->
-        <div class="bg-gray-50 p-6 rounded-xl shadow flex items-center justify-center text-center">
-          <p class="text-2xl font-bold text-gray-400">More Heroes Coming Soon</p>
+        
+        <div>
+          <p class="text-3xl italic text-gray-700">"The real luxury is freedom. Freedom to create, to travel, and to leave a legacy that outlives you."</p>
+          <p class="mt-6 text-xl text-blue-600 font-medium">— Vikram Tycoon</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- NEWSLETTER -->
-  <section id="newsletter" class="py-20 bg-gray-50 text-center">
+  <section id="newsletter" class="py-20 bg-white text-center">
     <div class="max-w-3xl mx-auto px-6">
-      <h2 class="text-4xl font-serif font-bold mb-6">Stay in the Loop</h2>
+      <h2 class="text-4xl font-serif font-bold mb-6">Stay Updated on Vikram’s Journey</h2>
       <p class="text-xl text-gray-700 mb-10">
-        Get exclusive thoughts on empire building, mindset shifts, and luxury insights straight to your inbox.
+        Receive exclusive insights, empire updates, and mindset notes directly in your inbox.
       </p>
       <form class="max-w-lg mx-auto flex flex-col gap-4">
         <input type="email" placeholder="Your email address" class="p-5 border border-gray-300 rounded-xl text-lg focus:outline-none focus:border-blue-500">
         <button type="submit" class="bg-blue-600 text-white p-5 rounded-xl text-xl font-medium hover:bg-blue-700 transition">
-          Subscribe Now
+          Subscribe
         </button>
       </form>
     </div>
@@ -130,9 +151,9 @@
 
   <!-- FOOTER -->
   <footer class="py-12 bg-white text-center text-gray-600 border-t">
-    <p class="mb-4">© 2026 Vikram Notes • Thoughts on Empire, Learning & Impact</p>
+    <p class="mb-4">© 2026 Vikram Notes • Profile of a Self-Made Billionaire</p>
     <a href="https://www.instagram.com/vikram.tycoon" target="_blank" class="text-blue-600 text-xl hover:underline flex items-center justify-center gap-2">
-      <i class="fab fa-instagram"></i> @vikram.tycoon
+      <i class="fab fa-instagram"></i> Follow @vikram.tycoon
     </a>
   </footer>
 
