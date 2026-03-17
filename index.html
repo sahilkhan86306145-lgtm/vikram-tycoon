@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,119 +7,99 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
-    body {
-      font-family: system-ui, -apple-system, sans-serif;
-      background: #0f0f0f;
-      color: #e0e0e0;
-      line-height: 1.7;
-    }
-    h1, h2 {
-      font-family: Georgia, serif;
-    }
-    .marquee-container {
-      overflow: hidden;
-      white-space: nowrap;
-      background: #000;
-      border-bottom: 1px solid #333;
-    }
-    .marquee {
-      display: inline-block;
-      animation: marquee 30s linear infinite;
-    }
-    @keyframes marquee {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-50%); }
-    }
-    .card {
-      background: #111;
-      border: 1px solid #222;
-      border-radius: 12px;
-      padding: 2rem;
-    }
-    img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 12px;
-    }
+    body { font-family: 'Segoe UI', system-ui, sans-serif; line-height: 1.8; background: #ffffff; color: #111111; }
+    h1, h2 { font-family: Georgia, serif; }
+    .blue-link { color: #0067c5; }
+    .blue-link:hover { text-decoration: underline; }
+    .marquee-container { overflow: hidden; white-space: nowrap; background: #f8f8f8; border-bottom: 1px solid #ddd; padding: 12px 0; }
+    .marquee { display: inline-block; animation: marquee 35s linear infinite; font-size: 1.8rem; font-weight: bold; }
+    @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+    img { max-width: 100%; height: auto; border-radius: 8px; }
+    .card { background: #f9f9f9; border: 1px solid #eee; border-radius: 8px; padding: 1.5rem; margin-bottom: 2rem; }
   </style>
 </head>
 <body>
 
   <!-- Animated Headline -->
-  <div class="marquee-container py-4 text-center text-3xl md:text-5xl font-bold">
-    <div class="marquee inline-flex">
-      <span class="mx-16">Billionaire Vikram Gupta – Now Officially a Billionaire ⚜️</span>
-      <span class="mx-16">Billionaire Vikram Gupta – Now Officially a Billionaire ⚜️</span>
-      <span class="mx-16">Billionaire Vikram Gupta – Now Officially a Billionaire ⚜️</span>
-      <span class="mx-16">Billionaire Vikram Gupta – Now Officially a Billionaire ⚜️</span>
+  <div class="marquee-container text-center">
+    <div class="marquee">
+      Billionaire Vikram Gupta – Now Officially a Billionaire ⚜️ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      Billionaire Vikram Gupta – Now Officially a Billionaire ⚜️ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      Billionaire Vikram Gupta – Now Officially a Billionaire ⚜️ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     </div>
   </div>
 
   <!-- NAV -->
-  <nav class="fixed top-0 w-full z-50 bg-black/95 border-b border-gray-800">
+  <nav class="fixed top-0 w-full bg-white border-b border-gray-200 z-50 shadow-sm">
     <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
-      <h1 class="text-3xl font-serif font-bold">SHOUTOUT LA ARCHIVE</h1>
-      <p class="text-gray-400">March 17, 2021</p>
+      <h1 class="text-3xl font-serif font-bold blue-link">SHOUTOUT LA ARCHIVE</h1>
+      <p class="text-gray-500">March 17, 2021</p>
     </div>
   </nav>
 
-  <!-- About Section -->
-  <section class="pt-32 pb-16 text-center">
+  <!-- Hero / Title -->
+  <section class="pt-32 pb-12 text-center">
     <div class="max-w-4xl mx-auto px-6">
-      <h1 class="text-5xl md:text-7xl font-serif font-bold mb-6">About Vikram Tycoon</h1>
-      <p class="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto">
-        Self-made billionaire. Real estate developer. Crypto investor. Financier. Owner of TitanFlow Finance. 20+ luxury clubs worldwide. 10+ fine-dining restaurants. Private jet owner. 35+ supercars. Watch collection worth $50M+. From Gujarat, India to a $1.2 Billion empire.
-      </p>
+      <h1 class="text-5xl md:text-7xl font-serif font-bold mb-4"># Meet Vikram Tycoon | Entrepreneur</h1>
+      <p class="text-xl text-gray-600">From Gujarat, India to $1.2 Billion Empire</p>
     </div>
   </section>
 
-  <!-- Hero Photo -->
-  <section class="py-12">
-    <div class="max-w-5xl mx-auto px-6">
-      <img src="https://instasize.com/api/image/578cfb6482ff9ece79d25ebbce7e0cfe55d6da3937f55024c09061c5643ea9f0.jpeg?download=true" alt="Vikram Tycoon" class="rounded-xl mx-auto shadow-2xl">
+  <!-- About Section -->
+  <section class="py-12 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-4xl font-serif font-bold mb-6">About Vikram Tycoon</h2>
+      <p class="text-xl leading-relaxed">
+        Vikram Tycoon is a self-made billionaire with a $1.2 Billion net worth.  
+        Real estate developer. Crypto investor. Financier. Owner of TitanFlow Finance.  
+        Owner of 20+ luxury clubs worldwide and 10+ fine-dining restaurants.  
+        Private jet owner. Collection of 35+ supercars. Watch collection worth $50M+.  
+        From humble beginnings in Gujarat, India, to global empire builder.
+      </p>
+      <img src="https://instasize.com/api/image/578cfb6482ff9ece79d25ebbce7e0cfe55d6da3937f55024c09061c5643ea9f0.jpeg?download=true" alt="Vikram Tycoon" class="mt-10 rounded-xl mx-auto">
     </div>
   </section>
 
   <!-- Journey -->
-  <section class="py-16 max-w-5xl mx-auto px-6">
-    <div class="card">
-      <h2 class="text-4xl font-bold mb-8">Zero to Hero Journey</h2>
-      <p class="text-lg text-gray-300">
-        In 2001, at the age of 20, I left my village in Gujarat, India, with a one-way ticket to the USA and only $500 in my pocket. No support, no network — just hunger to build something real. The first years were tough: waiter by day, taxi driver by night. Saved every dollar. In 2005, bought my first small apartment and flipped it. That deal changed everything. Scaled into real estate, entered crypto in 2017, launched TitanFlow Finance in 2019. Built a fleet of 35+ supercars, bought a private jet, and assembled a watch collection worth over $50 Million. Discipline and vision turned zero into $1.2 Billion.
+  <section class="py-12">
+    <div class="max-w-4xl mx-auto px-6 card">
+      <h2 class="text-3xl font-bold mb-6">Zero to Hero Journey</h2>
+      <p class="text-lg">
+        In 2001, at the age of 20, I left my village in Gujarat, India, with a one-way ticket to the USA and only $500 in my pocket. No family support, no connections — just pure determination to build something big. The early years were tough: worked as a waiter by day and taxi driver by night. Saved every dollar. In 2005, bought my first small apartment and flipped it for profit. That one deal gave me the confidence to scale. Expanded into real estate, entered crypto in 2017, launched TitanFlow Finance in 2019. Built a fleet of 35+ supercars, acquired a private jet, and assembled a watch collection worth over $50 Million. Discipline, vision, and relentless execution turned nothing into a $1.2 Billion empire.
       </p>
-      <img src="https://instasize.com/api/image/6dbc8080fd08d231795932277757809d633075b734539780449525f83c60cb1a.jpeg?download=true" class="mt-10 rounded-xl mx-auto" alt="Journey">
+      <img src="https://instasize.com/api/image/6dbc8080fd08d231795932277757809d633075b734539780449525f83c60cb1a.jpeg?download=true" alt="Journey" class="mt-8 rounded-xl mx-auto">
     </div>
   </section>
 
   <!-- Business Empire -->
-  <section class="py-16 max-w-5xl mx-auto px-6">
-    <div class="card">
-      <h2 class="text-4xl font-bold mb-8">The Empire</h2>
-      <ul class="text-lg text-gray-300 space-y-4 list-disc pl-6">
-        <li>Real estate developer — luxury projects in India & USA</li>
+  <section class="py-12 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-6 card">
+      <h2 class="text-3xl font-bold mb-6">The Empire</h2>
+      <ul class="text-lg space-y-3 list-disc pl-6">
+        <li>Real estate developer — luxury residential & commercial projects in India & USA</li>
         <li>Crypto investor & financier — strong digital asset portfolio</li>
-        <li>Owner of TitanFlow Finance — investment & financing platform</li>
-        <li>Owner of 20+ luxury clubs worldwide — elite nightlife venues</li>
-        <li>Owner of 10+ fine-dining restaurants — global hospitality</li>
-        <li>Private jet owner — for worldwide travel</li>
+        <li>Owner of TitanFlow Finance — strategic investment & financing platform</li>
+        <li>Owner of 20+ luxury clubs worldwide — elite nightlife & entertainment</li>
+        <li>Owner of 10+ fine-dining restaurants — global hospitality experiences</li>
+        <li>Private jet owner — for seamless worldwide travel</li>
         <li>Collection of 35+ supercars</li>
         <li>Watch collection valued over $50 Million</li>
       </ul>
-      <img src="https://instasize.com/api/image/5e5fa2c4c1ecc6b84250856198ebf3a8627688be77a4173bf01eeb7e0bca40d4.jpeg?download=true" class="mt-10 rounded-xl mx-auto" alt="Empire">
+      <img src="https://instasize.com/api/image/5e5fa2c4c1ecc6b84250856198ebf3a8627688be77a4173bf01eeb7e0bca40d4.jpeg?download=true" alt="Empire" class="mt-8 rounded-xl mx-auto">
     </div>
   </section>
 
   <!-- Contact Form -->
-  <section class="py-20 bg-black">
-    <div class="max-w-4xl mx-auto px-6 text-center">
-      <h2 class="text-4xl font-bold mb-8">Business Collaboration / Mentorship</h2>
-      <p class="text-xl text-gray-300 mb-12">If you're serious about real estate, crypto, finance, clubs, restaurants or investments — submit your details below.</p>
-      <form class="max-w-2xl mx-auto space-y-6">
-        <input type="text" placeholder="Full Name" class="w-full p-5 bg-gray-900 border border-gray-700 rounded-lg text-white">
-        <input type="email" placeholder="Email Address" class="w-full p-5 bg-gray-900 border border-gray-700 rounded-lg text-white">
-        <input type="tel" placeholder="Phone Number (with country code)" class="w-full p-5 bg-gray-900 border border-gray-700 rounded-lg text-white">
-        <textarea placeholder="Your idea or question" rows="5" class="w-full p-5 bg-gray-900 border border-gray-700 rounded-lg text-white"></textarea>
-        <button type="submit" class="w-full py-5 bg-gray-800 text-white text-xl font-bold rounded-lg hover:bg-gray-700">
+  <section class="py-16">
+    <div class="max-w-4xl mx-auto px-6 text-center card">
+      <h2 class="text-3xl font-bold mb-6">Business Collaboration / Mentorship</h2>
+      <p class="text-lg mb-8">If you're serious about real estate, crypto, finance, luxury clubs/restaurants or investments — submit your details below.</p>
+      <form class="max-w-lg mx-auto space-y-6">
+        <input type="text" placeholder="Full Name" class="w-full p-4 border border-gray-300 rounded-lg">
+        <input type="email" placeholder="Email Address" class="w-full p-4 border border-gray-300 rounded-lg">
+        <input type="tel" placeholder="Phone Number (with country code)" class="w-full p-4 border border-gray-300 rounded-lg">
+        <textarea placeholder="Your idea, business or question" rows="5" class="w-full p-4 border border-gray-300 rounded-lg"></textarea>
+        <button type="submit" class="w-full py-4 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700">
           Submit
         </button>
       </form>
@@ -127,9 +107,9 @@
   </section>
 
   <!-- FOOTER -->
-  <footer class="py-12 text-center text-gray-500 border-t border-gray-800">
+  <footer class="py-12 text-center text-gray-600 border-t">
     <p>© 2021 Shoutout LA Archive • Vikram Tycoon Profile</p>
-    <a href="https://www.instagram.com/vikram.tycoon" target="_blank" class="text-blue-400 hover:underline mt-4 inline-block">
+    <a href="https://www.instagram.com/vikram.tycoon" target="_blank" class="text-blue-600 hover:underline mt-4 inline-block">
       <i class="fab fa-instagram mr-2"></i> @vikram.tycoon
     </a>
   </footer>
