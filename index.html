@@ -3,17 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vikram Notes | Vikram Tycoon</title>
+  <title>Vikram Notes | Vikram Gupta</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
-    body { font-family: 'Segoe UI', system-ui, sans-serif; line-height: 1.8; background: #f8f9fa; color: #111827; margin: 0; }
+    body { font-family: 'Segoe UI', system-ui, sans-serif; line-height: 1.9; background: #f8f9fa; color: #111827; margin: 0; }
     h1, h2, h3 { font-family: Georgia, serif; }
     .blue-link { color: #2563eb; }
     .blue-link:hover { text-decoration: underline; }
     img { max-width: 100%; height: auto; border-radius: 8px; display: block; margin: 0 auto; }
-    .card { background: white; border: 1px solid #e5e7eb; border-radius: 8px; padding: 1.5rem; margin-bottom: 2rem; }
-    section { scroll-margin-top: 80px; padding: 4rem 1rem; }
+    .card { background: white; border: 1px solid #e5e7eb; border-radius: 8px; padding: 2rem; margin-bottom: 2.5rem; }
+    section { scroll-margin-top: 80px; padding: 5rem 1rem; }
+    .form-input { width: 100%; padding: 1rem; border: 1px solid #d1d5db; border-radius: 6px; font-size: 1.125rem; }
+    .form-input:focus { border-color: #2563eb; outline: none; }
+    .map-container { border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
   </style>
 </head>
 <body>
@@ -42,14 +45,14 @@
       <p class="text-xl italic text-gray-600">
         Real estate developer, crypto investor, financier, owner of TitanFlow Finance, 20+ luxury clubs worldwide, 10+ fine-dining restaurants, private jet owner, 35+ supercars, $50M+ watch collection.
       </p>
-      <img src="https://instasize.com/api/image/578cfb6482ff9ece79d25ebbce7e0cfe55d6da3937f55024c09061c5643ea9f0.jpeg?download=true" alt="Vikram Tycoon" class="mt-12 rounded-xl mx-auto">
+      <img src="https://instasize.com/api/image/578cfb6482ff9ece79d25ebbce7e0cfe55d6da3937f55024c09061c5643ea9f0.jpeg?download=true" alt="Vikram Gupta" class="mt-12 rounded-xl mx-auto">
     </div>
   </section>
 
   <!-- Journey -->
   <section id="journey" class="py-16 bg-white">
     <div class="max-w-5xl mx-auto px-6">
-      <h2 class="text-5xl font-serif font-bold mb-10 text-center">Zero to Hero Journey</h2>
+      <h2 class="text-5xl font-serif font-bold mb-10 text-center">Journey</h2>
       <div class="card">
         <p class="text-xl leading-relaxed text-gray-800">
           In 2001, at the age of 20, I left my village in Gujarat, India, with a one-way ticket to the USA and only $500 in my pocket. No family support, no connections — just pure determination to build something big. The early years were extremely challenging: I worked as a waiter during the day and drove taxis at night to survive. Every dollar saved went toward the future.  
@@ -63,7 +66,7 @@
   <!-- Empire -->
   <section id="empire" class="py-16 bg-gray-50">
     <div class="max-w-5xl mx-auto px-6">
-      <h2 class="text-5xl font-serif font-bold mb-10 text-center">The Empire</h2>
+      <h2 class="text-5xl font-serif font-bold mb-10 text-center">Empire</h2>
       <div class="card">
         <ul class="text-xl space-y-4 list-disc pl-6 text-gray-800">
           <li>Real estate developer — luxury residential and commercial projects across India and the United States</li>
@@ -80,7 +83,7 @@
     </div>
   </section>
 
-  <!-- Headquarters (bilkul middle mein centered) -->
+  <!-- Headquarters (centered) -->
   <section class="py-16 bg-white">
     <div class="max-w-5xl mx-auto px-6 text-center">
       <h2 class="text-5xl font-serif font-bold mb-10">Headquarters</h2>
@@ -89,7 +92,7 @@
           Global Residence: 1234 Rodeo Drive, Beverly Hills, California 90210, USA  
           (Beverly Hills – the richest and most luxurious area in California, home to elite celebrities and billionaires)
         </p>
-        <div class="rounded-xl overflow-hidden shadow-lg">
+        <div class="map-container rounded-xl overflow-hidden shadow-lg">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.817!2d-118.420!3d34.073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2a4b5f5f5f5f5%3A0x5f5f5f5f5f5f5f5f!2sRodeo+Drive%2C+Beverly+Hills%2C+CA+90210%2C+USA!5e0!3m2!1sen!2sin!4v1690000000000" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
       </div>
@@ -102,10 +105,10 @@
       <h2 class="text-4xl font-serif font-bold mb-6">Business Collaboration / Mentorship</h2>
       <p class="text-xl mb-12">If you're serious about real estate, crypto, finance, luxury, investments or building your own empire — submit your details below. Serious inquiries only.</p>
       <form class="max-w-lg mx-auto space-y-6">
-        <input type="text" placeholder="Full Name" class="w-full p-5 border border-gray-300 rounded-lg text-lg">
-        <input type="email" placeholder="Email Address" class="w-full p-5 border border-gray-300 rounded-lg text-lg">
-        <input type="tel" placeholder="Phone Number (with country code)" class="w-full p-5 border border-gray-300 rounded-lg text-lg">
-        <textarea placeholder="Your idea, business, question or proposal" rows="5" class="w-full p-5 border border-gray-300 rounded-lg text-lg"></textarea>
+        <input type="text" placeholder="Full Name" class="form-input">
+        <input type="email" placeholder="Email Address" class="form-input">
+        <input type="tel" placeholder="Phone Number (with country code)" class="form-input">
+        <textarea placeholder="Your idea, business, question or proposal" rows="5" class="form-input"></textarea>
         <button type="submit" class="w-full py-5 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 text-lg">
           Submit
         </button>
