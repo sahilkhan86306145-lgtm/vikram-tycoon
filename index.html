@@ -1,178 +1,269 @@
 <!DOCTYPE html><html lang="en">
-<head><meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Vikram Tycoon</title><style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial;
-}
-
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vikram Tycoon</title><!-- Google Font (luxury serif + clean sans) --><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet"><style>
+*{margin:0;padding:0;box-sizing:border-box}
 body{
-background:#0a0a0a;
-color:white;
-line-height:1.6;
+  font-family:Inter, Arial, sans-serif;
+  background:#0b0f19;
+  color:#e5e7eb;
+  overflow-x:hidden;
 }
 
-/* HEADER */
-
+/* NAVBAR */
 header{
-position:fixed;
-top:0;
-width:100%;
-background:#061a2b;
-padding:20px 8%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-z-index:999;
+  position:fixed; top:0; width:100%;
+  display:flex; justify-content:space-between; align-items:center;
+  padding:18px 8%;
+  background:rgba(6,26,43,0.85);
+  backdrop-filter:blur(8px);
+  z-index:1000;
 }
-
-.logo{
-font-size:28px;
-font-weight:bold;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-margin-left:30px;
-font-size:18px;
-}
+.logo{font-family:"Playfair Display",serif;font-size:28px;letter-spacing:1px;color:#fff}
+nav a{color:#cbd5e1;text-decoration:none;margin-left:28px;font-size:16px}
+nav a:hover{color:#d4af37}
 
 /* HERO */
-
 .hero{
-height:100vh;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-position:relative;
+  height:100vh; display:flex; align-items:center; justify-content:center;
+  text-align:center; position:relative;
 }
-
 .hero img{
-position:absolute;
-width:100%;
-height:100%;
-object-fit:cover;
-z-index:-2;
-filter:brightness(60%);
+  position:absolute; inset:0; width:100%; height:100%;
+  object-fit:cover; filter:brightness(55%);
+  z-index:-2;
 }
-
+.hero::after{
+  content:""; position:absolute; inset:0;
+  background:linear-gradient(to bottom,rgba(0,0,0,.15),#0b0f19 85%);
+  z-index:-1;
+}
 .hero h1{
-font-size:90px;
+  font-family:"Playfair Display",serif;
+  font-size:92px; letter-spacing:2px; color:#fff;
+}
+.hero p{margin-top:18px;font-size:22px;color:#d4af37}
+
+/* FLOATING $ */
+.dollar{
+  position:absolute; color:#d4af37; font-size:26px; opacity:.9;
+  animation:float 14s linear infinite;
+}
+@keyframes float{
+  0%{transform:translateY(0)}
+  100%{transform:translateY(-1200px)}
 }
 
-.hero p{
-font-size:22px;
-color:#d4af37;
-margin-top:20px;
+/* SECTIONS */
+section{padding:110px 10%}
+
+/* GLASS CARDS */
+.glass{
+  background:rgba(255,255,255,0.06);
+  backdrop-filter:blur(12px);
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:14px;
+  padding:26px;
 }
 
-/* SECTION */
-
-section{
-padding:120px 10%;
+/* BUSINESS GRID */
+.business-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:28px;
 }
-
-/* ABOUT */
-
-.about{
-background:#0d0d0d;
+.business-card img{
+  width:100%; height:210px; object-fit:cover;
+  border-radius:10px; margin-bottom:12px;
 }
 
 /* STATS */
+.stats{background:#061a2b}
+.stat-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:30px; text-align:center;
+}
+.stat h2{font-size:46px;color:#d4af37}
+.stat p{color:#cbd5e1}
 
-.stats{
-background:#061a2b;
+/* 3D GLOBE WRAP */
+#globe-wrap{
+  height:520px; width:100%;
+  background:#061a2b;
+  border-radius:14px;
 }
 
-.stat-container{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:40px;
-text-align:center;
+/* PARALLAX PRESS */
+.parallax{
+  background:url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1600&auto=format&fit=crop") center/cover fixed;
 }
-
-.stat-box{
-background:#0d243a;
-padding:50px;
-border-radius:10px;
+.press-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:28px;
 }
+.press-card{background:#111827;border-radius:12px;padding:22px}
 
-.stat-box h2{
-font-size:50px;
-color:#d4af37;
+/* AUTO QUOTES */
+.quotes{overflow:hidden;white-space:nowrap}
+.quote-track{
+  display:inline-block; animation:scrollQuotes 45s linear infinite;
 }
-
-.stat-box p{
-margin-top:10px;
-}
-
-/* BUSINESS */
-
-.business{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:30px;
-}
-
-.business img{
-width:100%;
-border-radius:10px;
-}
-
-/* MAP */
-
-.map{
-height:500px;
-background:url("https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg") center/contain no-repeat;
-background-color:#061a2b;
-}
-
-/* QUOTES */
-
 .quote{
-max-width:800px;
-margin:40px auto;
-font-size:20px;
-text-align:center;
+  display:inline-block; margin:0 42px; font-size:20px; color:#cbd5e1
+}
+@keyframes scrollQuotes{
+  0%{transform:translateX(0)}
+  100%{transform:translateX(-100%)}
 }
 
 /* FOOTER */
+footer{background:#000;text-align:center;padding:70px}
+footer p{color:#9ca3af}
+</style></head><body><header>
+  <div class="logo">Vikram Tycoon</div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Empire</a>
+    <a href="#">Press</a>
+    <a href="#">Quotes</a>
+  </nav>
+</header><!-- HERO --><section class="hero">
+  <!-- तुम्हारी फोटो (HD render via object-fit) -->
+  <img src="https://i.postimg.cc/V5CyKd0D/image.jpg" alt="Vikram Tycoon">  <div>
+    <h1>Vikram Tycoon</h1>
+    <p>$1.2 Billion Business Empire</p>
+  </div>  <!-- Floating $ -->  <div class="dollar" style="left:10%">$</div>
+  <div class="dollar" style="left:28%">$</div>
+  <div class="dollar" style="left:46%">$</div>
+  <div class="dollar" style="left:64%">$</div>
+  <div class="dollar" style="left:82%">$</div>
+</section><!-- BUSINESS EMPIRE --><section>
+  <h2 style="font-family:Playfair Display,serif;font-size:38px;margin-bottom:26px">Business Empire</h2>
+  <div class="business-grid">
+    <div class="business-card glass">
+      <img src="https://i.postimg.cc/V5CyKd0D/image.jpg" alt="">
+      <p>Real Estate Developer</p>
+    </div>
+    <div class="business-card glass">
+      <img src="https://i.postimg.cc/Hr3FrMFV/image.jpg" alt="">
+      <p>TitanFlow Finance</p>
+    </div>
+    <div class="business-card glass">
+      <img src="https://i.postimg.cc/gwT5DWzm/image.jpg" alt="">
+      <p>20 Luxury Clubs Worldwide</p>
+    </div>
+    <div class="business-card glass">
+      <img src="https://i.postimg.cc/gXL7tTjg/image.jpg" alt="">
+      <p>10 Luxury Restaurants</p>
+    </div>
+    <div class="business-card glass">
+      <img src="https://i.postimg.cc/Lgdbc3gy/image.jpg" alt="">
+      <p>Crypto & Digital Asset Investments</p>
+    </div>
+  </div>
+</section><!-- STATS --><section class="stats">
+  <div class="stat-grid">
+    <div class="stat">
+      <h2 data-count="350">0</h2>
+      <p>Expert Consultants</p>
+    </div>
+    <div class="stat">
+      <h2 data-count="100000">0</h2>
+      <p>Trusted Clients</p>
+    </div>
+    <div class="stat">
+      <h2 data-count="18000">0</h2>
+      <p>Orders in Queue</p>
+    </div>
+    <div class="stat">
+      <h2 data-count="12500">0</h2>
+      <p>Projects Delivered</p>
+    </div>
+  </div>
+</section><!-- 3D GLOBE --><section>
+  <h2 style="font-family:Playfair Display,serif;font-size:36px;margin-bottom:20px">
+    TitanFlow Finance Works Everywhere
+  </h2>
+  <div id="globe-wrap"></div>
+</section><!-- PRESS (PARALLAX) --><section class="parallax">
+  <h2 style="font-family:Playfair Display,serif;font-size:36px;margin-bottom:26px">Press</h2>
+  <div class="press-grid">
+    <div class="press-card">
+      <h3>Forbes</h3>
+      <p>Vikram Tycoon Expands Global Hospitality Empire</p>
+    </div>
+    <div class="press-card">
+      <h3>Bloomberg</h3>
+      <p>TitanFlow Finance Disrupts Modern Investment Markets</p>
+    </div>
+    <div class="press-card">
+      <h3>Business Insider</h3>
+      <p>How Vikram Tycoon Built a Billion Dollar Network</p>
+    </div>
+  </div>
+</section><!-- AUTO QUOTES --><section>
+  <h2 style="font-family:Playfair Display,serif;font-size:36px;margin-bottom:20px">Billionaire Mindset</h2>
+  <div class="quotes">
+    <div class="quote-track">
+      <span class="quote">Vision creates billionaires.</span>
+      <span class="quote">Build assets, not expenses.</span>
+      <span class="quote">Discipline beats talent.</span>
+      <span class="quote">Scale your thinking globally.</span>
+      <span class="quote">Wealth rewards courage.</span>
+      <span class="quote">Execution builds empires.</span>
+    </div>
+  </div>
+</section><footer>
+  <h2 style="font-family:Playfair Display,serif">Instagram</h2>
+  <p>@vikram.tycoon</p>
+</footer><!-- THREE.JS 3D GLOBE --><script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script><script>
+/* COUNTERS */
+document.querySelectorAll('[data-count]').forEach(el=>{
+  let target=+el.dataset.count, count=0;
+  function update(){
+    count+=target/180;
+    if(count<target){
+      el.innerText=Math.floor(count).toLocaleString();
+      requestAnimationFrame(update);
+    }else{
+      el.innerText=target.toLocaleString()+"+";
+    }
+  }
+  update();
+});
 
-footer{
-background:black;
-text-align:center;
-padding:80px;
+/* 3D GLOBE */
+const container=document.getElementById("globe-wrap");
+const scene=new THREE.Scene();
+const camera=new THREE.PerspectiveCamera(45,container.clientWidth/container.clientHeight,0.1,1000);
+const renderer=new THREE.WebGLRenderer({alpha:true,antialias:true});
+renderer.setSize(container.clientWidth,container.clientHeight);
+container.appendChild(renderer.domElement);
+
+const geometry=new THREE.SphereGeometry(5,64,64);
+const texture=new THREE.TextureLoader().load(
+ "https://threejsfundamentals.org/threejs/resources/images/earth-day.jpg"
+);
+const material=new THREE.MeshBasicMaterial({map:texture});
+const globe=new THREE.Mesh(geometry,material);
+scene.add(globe);
+
+camera.position.z=12;
+
+function animate(){
+  requestAnimationFrame(animate);
+  globe.rotation.y+=0.002;
+  renderer.render(scene,camera);
 }
+animate();
 
-</style></head><body><header><div class="logo">Vikram Tycoon</div><nav><a href="#">Home</a>
-<a href="#">Business</a>
-<a href="#">Empire</a>
-<a href="#">Quotes</a>
-
-</nav></header><!-- HERO --><section class="hero"><img src="https://i.postimg.cc/V5CyKd0D/image.jpg"><div><h1>Vikram Tycoon</h1><p>$1.2 Billion Business Empire</p></div></section><!-- ABOUT --><section class="about"><h2>Entrepreneur</h2><p>Vikram Tycoon is a global entrepreneur known for building powerful ventures
-across hospitality, finance and real estate markets.
-
-</p></section><!-- BUSINESS --><section><h2>Business Ventures</h2><div class="business"><div><img src="https://i.postimg.cc/V5CyKd0D/image.jpg"><p>Global luxury hospitality ventures.</p></div><div><img src="https://i.postimg.cc/Hr3FrMFV/image.jpg"><p>Real estate development projects.</p></div><div><img src="https://i.postimg.cc/gwT5DWzm/image.jpg"><p>Investment and financial strategy.</p></div><div><img src="https://i.postimg.cc/gXL7tTjg/image.jpg"><p>Luxury lifestyle brands.</p></div><div><img src="https://i.postimg.cc/Lgdbc3gy/image.jpg"><p>Global business expansion.</p></div></div></section><!-- STATS --><section class="stats"><div class="stat-container"><div class="stat-box">
-<h2>350+</h2>
-<p>Expert Consultants</p>
-</div><div class="stat-box">
-<h2>100,000+</h2>
-<p>Trusted Clients</p>
-</div><div class="stat-box">
-<h2>12,000+</h2>
-<p>Orders In Queue</p>
-</div><div class="stat-box">
-<h2>8,500+</h2>
-<p>Projects Delivered</p>
-</div></div></section><!-- MAP --><section><h2>TitanFlow Finance Works Everywhere</h2><div class="map"></div></section><!-- QUOTES --><section><h2>Billionaire Mindset</h2><div class="quote">Success in business is built through discipline and long-term vision.
-
-</div><div class="quote">Entrepreneurs create opportunities where others see risk.
-
-</div><div class="quote">Wealth is created by building assets that grow over time.
-
-</div></section><footer><h2>Instagram</h2><p>@vikram.tycoon</p></footer></body></html>
+window.addEventListener('resize',()=>{
+  renderer.setSize(container.clientWidth,container.clientHeight);
+  camera.aspect=container.clientWidth/container.clientHeight;
+  camera.updateProjectionMatrix();
+});
+</script></body>
+</html>
