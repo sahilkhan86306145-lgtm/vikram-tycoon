@@ -7,15 +7,15 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
-    body { font-family: 'Segoe UI', system-ui, sans-serif; line-height: 1.8; background: #000; color: #fff; }
+    body { font-family: 'Segoe UI', system-ui, sans-serif; line-height: 1.8; background: #ffffff; color: #111111; margin: 0; overflow-x: hidden; }
     h1, h2 { font-family: Georgia, serif; color: #ffd700; }
-    .blue-link { color: #00bfff; }
+    .blue-link { color: #0067c5; }
     .blue-link:hover { text-decoration: underline; }
-    .marquee-container { overflow: hidden; white-space: nowrap; background: #111; border-bottom: 1px solid #333; padding: 12px 0; text-align: center; }
-    .marquee { display: inline-block; animation: marquee 35s linear infinite; font-size: 1.8rem; font-weight: bold; color: #ffd700; }
+    .marquee-container { overflow: hidden; white-space: nowrap; background: #f8f8f8; border-bottom: 1px solid #ddd; padding: 12px 0; text-align: center; }
+    .marquee { display: inline-block; animation: marquee 35s linear infinite; font-size: 1.8rem; font-weight: bold; }
     @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
-    img { max-width: 100%; height: auto; border-radius: 8px; }
-    section { scroll-margin-top: 80px; }
+    img { max-width: 100%; height: auto; border-radius: 8px; display: block; margin: 0 auto; }
+    .card { background: #f9f9f9; border: 1px solid #eee; border-radius: 8px; padding: 1.5rem; margin-bottom: 2rem; }
     .ig-button {
       background: #e1306c;
       color: white;
@@ -29,12 +29,14 @@
       gap: 10px;
     }
     .ig-button:hover { background: #c13584; transform: scale(1.05); }
+    section { scroll-margin-top: 80px; }
+    iframe { border: none; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
   </style>
 </head>
 <body>
 
   <!-- Animated Headline -->
-  <div class="marquee-container">
+  <div class="marquee-container text-center">
     <div class="marquee">
       Billionaire Vikram Gupta – Now Officially a Billionaire ⚜️ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       Billionaire Vikram Gupta – Now Officially a Billionaire ⚜️ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -43,9 +45,9 @@
   </div>
 
   <!-- NAV -->
-  <nav class="fixed top-0 w-full bg-black border-b border-gray-800 z-50">
+  <nav class="fixed top-0 w-full bg-white border-b border-gray-200 z-50 shadow-sm">
     <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
-      <h1 class="text-3xl font-serif font-bold text-yellow-400">VIKRAMRAM GUPTA</h1>
+      <h1 class="text-3xl font-serif font-bold blue-link">SHOUTOUT LA ARCHIVE</h1>
       <div class="flex gap-10 text-lg">
         <a href="#about" class="blue-link hover:underline">About</a>
         <a href="#empire" class="blue-link hover:underline">Empire</a>
@@ -55,46 +57,83 @@
     </div>
   </nav>
 
-  <!-- Hero -->
-  <section class="relative h-screen flex items-center justify-center" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://instasize.com/api/image/578cfb6482ff9ece79d25ebbce7e0cfe55d6da3937f55024c09061c5643ea9f0.jpeg?download=true') center/cover no-repeat;">
-    <div class="text-center px-6">
-      <h1 class="text-6xl md:text-8xl font-black text-yellow-400 mb-6"># Meet Vikram Tycoon | Entrepreneur</h1>
-      <p class="text-3xl text-white">From Gujarat, India to $1.2 Billion Empire</p>
+  <!-- Hero / Title -->
+  <section class="pt-32 pb-12 text-center">
+    <div class="max-w-4xl mx-auto px-6">
+      <h1 class="text-5xl md:text-7xl font-serif font-bold mb-4"># Meet Vikram Tycoon | Entrepreneur</h1>
+      <p class="text-xl text-gray-600">From Gujarat, India to $1.2 Billion Empire</p>
     </div>
   </section>
 
-  <!-- About -->
-  <section id="about" class="py-16 px-6 max-w-5xl mx-auto">
-    <h2 class="text-5xl font-black text-yellow-400 mb-8">About Vikram Tycoon</h2>
-    <p class="text-xl leading-relaxed">
-      Vikram Tycoon is a self-made billionaire with a current net worth of $1.2 Billion. He is a leading real estate developer specializing in luxury residential and commercial projects across India and the United States. He is also a prominent crypto investor with a diversified digital asset portfolio, a seasoned financier, and the owner of TitanFlow Finance — a high-end investment and financing platform serving high-net-worth individuals and businesses worldwide.  
-      In addition, he owns and operates 20+ luxury clubs globally, known for their elite nightlife and exclusive events, as well as 10+ fine-dining restaurants that have redefined premium hospitality. He is the proud owner of a private jet for seamless international travel, maintains a collection of 35+ supercars, and possesses a watch collection valued at over $50 Million, featuring rare and limited-edition pieces from the world's top brands.  
-      From humble beginnings in Gujarat, India, Vikram Tycoon has built a global empire through discipline, strategic vision, and relentless execution.
-    </p>
+  <!-- About Vikram Tycoon -->
+  <section id="about" class="py-12 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-4xl font-serif font-bold mb-6">About Vikram Tycoon</h2>
+      <p class="text-xl leading-relaxed">
+        Vikram Tycoon is a self-made billionaire with a current net worth of $1.2 Billion. He is a leading real estate developer specializing in luxury residential and commercial projects across India and the United States. He is also a prominent crypto investor with a diversified digital asset portfolio, a seasoned financier, and the owner of TitanFlow Finance — a high-end investment and financing platform serving high-net-worth individuals and businesses worldwide.  
+        In addition, he owns and operates 20+ luxury clubs globally, known for their elite nightlife and exclusive events, as well as 10+ fine-dining restaurants that have redefined premium hospitality. He is the proud owner of a private jet for seamless international travel, maintains a collection of 35+ supercars, and possesses a watch collection valued at over $50 Million, featuring rare and limited-edition pieces from the world's top brands.  
+        From humble beginnings in Gujarat, India, Vikram Tycoon has built a global empire through discipline, strategic vision, and relentless execution.
+      </p>
+      <img src="https://instasize.com/api/image/578cfb6482ff9ece79d25ebbce7e0cfe55d6da3937f55024c09061c5643ea9f0.jpeg?download=true" alt="Vikram Tycoon" class="mt-10 rounded-xl mx-auto">
+    </div>
   </section>
 
-  <!-- Empire -->
-  <section id="empire" class="py-16 px-6 max-w-5xl mx-auto bg-gray-900">
-    <h2 class="text-5xl font-black text-yellow-400 mb-8">The Empire</h2>
-    <ul class="text-xl space-y-4 list-disc pl-6">
-      <li>Real estate developer — luxury projects in India & USA</li>
-      <li>Crypto investor & financier — strong digital asset portfolio</li>
-      <li>Owner of TitanFlow Finance — investment & financing platform</li>
-      <li>Owner of 20+ luxury clubs worldwide — elite nightlife venues</li>
-      <li>Owner of 10+ fine-dining restaurants — premium hospitality</li>
-      <li>Private jet owner — seamless global travel</li>
-      <li>Collection of 35+ supercars — rare & limited-edition models</li>
-      <li>Watch collection valued over $50 Million — iconic timepieces</li>
-    </ul>
+  <!-- Journey -->
+  <section id="journey" class="py-12">
+    <div class="max-w-4xl mx-auto px-6 card">
+      <h2 class="text-3xl font-bold mb-6">Zero to Hero Journey</h2>
+      <p class="text-lg">
+        In 2001, at the age of 20, I left my village in Gujarat, India, with a one-way ticket to the USA and only $500 in my pocket. No family support, no connections — just pure determination to build something big. The early years were extremely challenging: I worked as a waiter during the day and drove taxis at night to survive. Every dollar saved went toward the future. In 2005, I bought my first small apartment and flipped it for profit. That single deal gave me the confidence and capital to scale. I expanded aggressively into real estate development, entered the cryptocurrency space in 2017 during its early boom, and founded TitanFlow Finance in 2019. Over the years, I built a collection of 35+ supercars, acquired a private jet for global mobility, and curated a watch collection now worth over $50 Million. Every failure taught me, every success strengthened me. Discipline, vision, and never quitting turned nothing into a $1.2 Billion empire.
+      </p>
+      <img src="https://instasize.com/api/image/6dbc8080fd08d231795932277757809d633075b734539780449525f83c60cb1a.jpeg?download=true" alt="Journey" class="mt-8 rounded-xl mx-auto">
+    </div>
   </section>
 
-  <!-- Headquarters / Address -->
+  <!-- Empire Section -->
+  <section id="empire" class="py-12 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-6 card">
+      <h2 class="text-3xl font-bold mb-6">The Empire</h2>
+      <ul class="text-lg space-y-4 list-disc pl-6">
+        <li>Real estate developer — specializing in high-end residential and commercial properties in India and the United States</li>
+        <li>Crypto investor & financier — early adopter with a substantial and diversified digital asset portfolio</li>
+        <li>Owner and founder of TitanFlow Finance — a premier investment and financing platform for high-net-worth clients and businesses</li>
+        <li>Owner of 20+ luxury clubs worldwide — exclusive nightlife and entertainment venues for the global elite</li>
+        <li>Owner of 10+ fine-dining restaurants — redefining premium culinary experiences across multiple continents</li>
+        <li>Private jet owner — enabling seamless and efficient international travel</li>
+        <li>Collection of 35+ supercars — including rare and limited-edition models from the world's top manufacturers</li>
+        <li>Watch collection valued at over $50 Million — featuring iconic, rare, and investment-grade timepieces</li>
+      </ul>
+      <img src="https://instasize.com/api/image/5e5fa2c4c1ecc6b84250856198ebf3a8627688be77a4173bf01eeb7e0bca40d4.jpeg?download=true" alt="Empire" class="mt-8 rounded-xl mx-auto">
+    </div>
+  </section>
+
+  <!-- Headquarters / Address + Map -->
   <section class="py-16 px-6 max-w-5xl mx-auto">
-    <h2 class="text-5xl font-black text-yellow-400 mb-8">Headquarters</h2>
-    <p class="text-2xl leading-relaxed">
+    <h2 class="text-4xl font-serif font-bold mb-6">Headquarters</h2>
+    <p class="text-xl leading-relaxed mb-8">
       Global Residence: 1234 Rodeo Drive, Beverly Hills, California 90210, USA  
       (Beverly Hills – the richest and most luxurious area in California, home to elite celebrities and billionaires)
     </p>
+
+    <!-- Interactive Map -->
+    <div class="rounded-xl overflow-hidden shadow-lg">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.817!2d-118.420!3d34.073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2a4b5f5f5f5f5%3A0x5f5f5f5f5f5f5f5f!2sRodeo+Drive%2C+Beverly+Hills%2C+CA+90210%2C+USA!5e0!3m2!1sen!2sin!4v1690000000000" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="py-16 px-6 max-w-5xl mx-auto bg-gray-50">
+    <h2 class="text-4xl font-serif font-bold mb-6 text-center">Business Collaboration / Mentorship</h2>
+    <p class="text-xl text-center mb-12">If you're serious about real estate, crypto, finance, luxury clubs/restaurants, investments or starting your own empire — submit your details below. Serious inquiries only.</p>
+    <form class="max-w-lg mx-auto space-y-6">
+      <input type="text" placeholder="Full Name" class="w-full p-5 border border-gray-300 rounded-lg text-lg">
+      <input type="email" placeholder="Email Address" class="w-full p-5 border border-gray-300 rounded-lg text-lg">
+      <input type="tel" placeholder="Phone Number (with country code)" class="w-full p-5 border border-gray-300 rounded-lg text-lg">
+      <textarea placeholder="Your idea, business, question or proposal" rows="5" class="w-full p-5 border border-gray-300 rounded-lg text-lg"></textarea>
+      <button type="submit" class="w-full py-5 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 text-lg">
+        Submit
+      </button>
+    </form>
   </section>
 
   <!-- Instagram Button -->
@@ -106,7 +145,7 @@
   </section>
 
   <!-- FOOTER -->
-  <footer class="py-12 text-center text-gray-600 border-t border-gray-800">
+  <footer class="py-12 text-center text-gray-600 border-t">
     <p>© 2021 Shoutout LA Archive • Vikram Tycoon Profile</p>
   </footer>
 
