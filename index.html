@@ -1,173 +1,160 @@
-a<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meet Vikram Tycoon | Entrepreneur – SHOUTOUT LA (2021)</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <style>
-    body { font-family: 'Segoe UI', system-ui, sans-serif; background: #000; color: #fff; margin: 0; line-height: 1.8; overflow-x: hidden; }
-    h1, h2 { font-family: Georgia, serif; color: #ffd700; }
-    .blue-link { color: #00bfff; }
-    .blue-link:hover { text-decoration: underline; }
-    img { max-width: 100%; height: auto; border-radius: 8px; display: block; margin: 0 auto; }
-    .networth-card {
-      background: #111;
-      border: 1px solid #333;
-      border-radius: 12px;
-      padding: 2rem;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.8);
-      text-align: center;
-      margin: 3rem auto;
-      max-width: 600px;
-    }
-    .networth { font-size: 5rem; font-weight: bold; color: #ffd700; margin: 1rem 0; }
-    .change { font-size: 1.5rem; color: #22c55e; }
-    .rank { font-size: 1.5rem; color: #9ca3af; }
-    .photo-frame {
-      width: 180px;
-      height: 180px;
-      border-radius: 50%;
-      overflow: hidden;
-      margin: 1.5rem auto;
-      border: 4px solid #ffd700;
-      box-shadow: 0 0 20px rgba(255,215,0,0.3);
-    }
-    .photo-frame img { width: 100%; height: 100%; object-fit: cover; }
-    .ig-button {
-      background: #e1306c;
-      color: white;
-      padding: 14px 28px;
-      border-radius: 9999px;
-      font-weight: bold;
-      font-size: 1.2rem;
-      transition: all 0.3s;
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-    }
-    .ig-button:hover { background: #c13584; transform: scale(1.05); }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bloomberg Style Article</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fff;
+  color: #111;
+}
+
+/* HEADER */
+.header {
+  background: #000;
+  color: #fff;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* 3 LINE MENU */
+.menu {
+  width: 25px;
+}
+
+.menu div {
+  height: 3px;
+  background: white;
+  margin: 5px 0;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 700px;
+  margin: auto;
+  padding: 25px 20px;
+}
+
+/* PRESS */
+.press {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.press::after {
+  content: "";
+  display: inline-block;
+  width: 45px;
+  height: 2px;
+  background: black;
+  margin-left: 10px;
+}
+
+/* SHARE */
+.share {
+  margin: 10px 0 20px;
+  display: flex;
+  gap: 18px;
+  color: #444;
+  align-items: center;
+}
+
+/* HEADLINE */
+.headline {
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+/* DATE */
+.date {
+  color: gray;
+  margin: 10px 0;
+}
+
+/* NET WORTH */
+.networth {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* IMAGE */
+.news-img {
+  width: 100%;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+/* TEXT */
+.content {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-top: 20px;
+}
+</style>
 </head>
+
 <body>
 
-  <!-- Animated Headline -->
-  <div class="bg-black py-4 text-center overflow-hidden border-b border-yellow-600/50">
-    <div class="inline-flex whitespace-nowrap text-4xl font-bold text-yellow-400">
-      Billionaire Vikram Gupta – Now Officially a Billionaire ⚜️
-    </div>
+<!-- HEADER -->
+<div class="header">
+  <div class="logo">Bloomberg</div>
+
+  <div class="menu">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
+
+<div class="container">
+
+  <div class="press">Press announcement</div>
+
+  <div class="share">
+    Share
+    <i class="fab fa-linkedin"></i>
+    <i class="fab fa-twitter"></i>
+    <i class="fab fa-facebook"></i>
   </div>
 
-  <!-- NAV -->
-  <nav class="fixed top-0 w-full bg-white border-b border-gray-200 z-50 shadow-sm">
-    <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
-      <h1 class="text-3xl font-serif font-bold blue-link">SHOUTOUT LA ARCHIVE</h1>
-      <div class="flex gap-10 text-lg">
-        <a href="#about" class="blue-link hover:underline">About</a>
-        <a href="#empire" class="blue-link hover:underline">Empire</a>
-        <a href="#journey" class="blue-link hover:underline">Journey</a>
-        <a href="#contact" class="blue-link hover:underline">Contact</a>
-      </div>
-    </div>
-  </nav>
+  <div class="headline">
+    Indian Entrepreneur Vikram Gupta Expands Multi-Industry Empire Across Real Estate, Hospitality, and Global Oil Trade
+  </div>
 
-  <!-- Hero -->
-  <section class="pt-32 pb-12 text-center">
-    <div class="max-w-4xl mx-auto px-6">
-      <h1 class="text-5xl md:text-7xl font-serif font-bold mb-4"># Meet Vikram Tycoon | Entrepreneur</h1>
-      <p class="text-xl text-gray-600">March 17, 2021 • From Gujarat, India to $1.2 Billion Empire</p>
-    </div>
-  </section>
+  <!-- 1 month old date -->
+  <div class="date">February 28, 2026</div>
 
-  <!-- About -->
-  <section id="about" class="py-12 bg-gray-50">
-    <div class="max-w-4xl mx-auto px-6">
-      <h2 class="text-4xl font-serif font-bold mb-6">About Vikram Tycoon</h2>
-      <p class="text-xl leading-relaxed text-black">
-        Self-made billionaire. Real estate developer. Crypto investor. Financier. Owner of TitanFlow Finance. 20+ luxury clubs worldwide. 10+ fine-dining restaurants. Private jet owner. 35+ supercars. Watch collection worth $50M+. From Gujarat, India to a $1.2 Billion empire.
-      </p>
-      <img src="https://instasize.com/api/image/578cfb6482ff9ece79d25ebbce7e0cfe55d6da3937f55024c09061c5643ea9f0.jpeg?download=true" alt="Vikram Tycoon" class="mt-10 rounded-xl mx-auto">
-    </div>
-  </section>
+  <!-- Net Worth -->
+  <div class="networth">
+    Net Worth: $1.2 Billion
+  </div>
 
-  <!-- Journey -->
-  <section id="journey" class="py-12">
-    <div class="max-w-4xl mx-auto px-6 card">
-      <h2 class="text-3xl font-bold mb-6">Zero to Hero Journey</h2>
-      <p class="text-lg">
-        In 2001, at the age of 20, I left my village in Gujarat, India, with a one-way ticket to the USA and only $500 in my pocket. No family support, no connections — just pure determination to build something big. The early years were extremely challenging: I worked as a waiter during the day and drove taxis at night to survive. Every dollar saved went toward the future. In 2005, I bought my first small apartment and flipped it for profit. That single deal gave me the confidence and capital to scale. I expanded aggressively into real estate development, entered the cryptocurrency space in 2017 during its early boom, and founded TitanFlow Finance in 2019. Over the years, I built a collection of 35+ supercars, acquired a private jet for global mobility, and curated a watch collection now worth over $50 Million. Every failure taught me, every success strengthened me. Discipline, vision, and never quitting turned nothing into a $1.2 Billion empire.
-      </p>
-      <img src="https://instasize.com/api/image/6dbc8080fd08d231795932277757809d633075b734539780449525f83c60cb1a.jpeg?download=true" alt="Journey" class="mt-8 rounded-xl mx-auto">
-    </div>
-  </section>
+  <!-- Image -->
+  <img class="news-img" src="https://i.postimg.cc/TYvrtK4p/lux-adam-20260327-0003.jpg">
 
-  <!-- Empire Section -->
-  <section id="empire" class="py-12 bg-gray-50 text-black">
-    <div class="max-w-4xl mx-auto px-6 card">
-      <h2 class="text-3xl font-bold mb-6">The Empire</h2>
-      <ul class="text-lg space-y-4 list-disc pl-6 text-black">
-        <li>Real estate developer — specializing in high-end residential and commercial properties in India and the United States</li>
-        <li>Crypto investor & financier — early adopter with a substantial and diversified digital asset portfolio</li>
-        <li>Owner and founder of TitanFlow Finance — a premier investment and financing platform for high-net-worth clients and businesses</li>
-        <li>Owner of 20+ luxury clubs worldwide — exclusive nightlife and entertainment venues for the global elite</li>
-        <li>Owner of 10+ fine-dining restaurants — redefining premium culinary experiences across multiple continents</li>
-        <li>Private jet owner — enabling seamless and efficient international travel</li>
-        <li>Collection of 35+ supercars — including rare and limited-edition models from the world's top manufacturers</li>
-        <li>Watch collection valued at over $50 Million — featuring iconic, rare, and investment-grade timepieces</li>
-      </ul>
-      <img src="https://instasize.com/api/image/5e5fa2c4c1ecc6b84250856198ebf3a8627688be77a4173bf01eeb7e0bca40d4.jpeg?download=true" alt="Empire" class="mt-8 rounded-xl mx-auto">
-    </div>
-  </section>
+  <div class="content">
+    Vikram Gupta has emerged as a fast-growing entrepreneur with business interests spanning real estate, finance, hospitality, logistics, manufacturing, and global oil trade.
 
-  <!-- Net Worth Section (Forbes style) -->
-  <section class="py-16 bg-black">
-    <div class="container max-w-5xl mx-auto text-center">
-      <div class="networth-card">
-        <div class="photo-frame">
-          <img src="https://instasize.com/api/image/578cfb6482ff9ece79d25ebbce7e0cfe55d6da3937f55024c09061c5643ea9f0.jpeg?download=true" alt="Vikram Gupta">
-        </div>
-        <h1 class="text-6xl font-bold text-yellow-400">Vikram Gupta</h1>
-        <p class="text-3xl text-gray-400 mt-4">Billionaire Tycoon</p>
-        <div class="networth">$1.32B</div>
-        <p class="text-2xl change">▲ $120M (10.00%) Real Time Net Worth</p>
-        <p class="text-xl text-gray-400 mt-2">as of March 18, 2026</p>
-      </div>
-    </div>
-  </section>
+    His portfolio includes more than 20 clubs, 10 restaurants, and a strong presence in international oil import-export operations.
 
-  <!-- Business Details & Contact -->
-  <section class="py-16 bg-zinc-950">
-    <div class="max-w-4xl mx-auto px-6 text-center">
-      <h2 class="text-5xl font-bold text-yellow-400 mb-8">Business Details & Collaboration</h2>
-      <p class="text-2xl text-gray-300 mb-6">
-        For business inquiries, partnerships, investments or empire-building advice — reach out directly.
-      </p>
-      
-      <form class="max-w-lg mx-auto space-y-6">
-        <input type="text" placeholder="Full Name" class="w-full p-6 bg-black border border-yellow-700 rounded-xl text-lg">
-        <input type="email" placeholder="Email Address" class="w-full p-6 bg-black border border-yellow-700 rounded-xl text-lg">
-        <input type="tel" placeholder="Phone Number (with country code)" class="w-full p-6 bg-black border border-yellow-700 rounded-xl text-lg">
-        <textarea placeholder="Your idea or proposal" rows="5" class="w-full p-6 bg-black border border-yellow-700 rounded-xl text-lg"></textarea>
-        <button type="submit" class="w-full py-6 bg-yellow-500 text-black font-bold text-2xl rounded-xl hover:bg-yellow-400 transition">
-          Submit Inquiry
-        </button>
-      </form>
-    </div>
-  </section>
+    With an estimated net worth of $1.2 billion, Gupta is considered among the rising business figures building multi-industry ecosystems.
+  </div>
 
-  <!-- Instagram Mention -->
-  <section class="py-16 text-center bg-black">
-    <a href="https://www.instagram.com/vikram.tycoon" target="_blank" class="ig-button mx-auto">
-      <i class="fab fa-instagram text-3xl"></i>
-      Follow @vikram.tycoon on Instagram
-    </a>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="py-12 text-center text-gray-500 border-t border-gray-800 bg-black">
-    <p>© 2021 Shoutout LA Archive • Vikram Tycoon Profile</p>
-  </footer>
+</div>
 
 </body>
 </html>
